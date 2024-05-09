@@ -1,0 +1,135 @@
+<ion-header>
+  <div>
+    <div class="DivHeader colorblue">
+      <ion-title>RECETIN</ion-title>
+      <img class="ImgAdd" id="ImgAdd" src="./../../assets/icon/Add.png">
+    </div>
+  </div>
+
+  <ion-segment [scrollable]="true" class="colorblue" value="heart">
+    <ion-segment-button id="MyRecipes" value="-1">
+      <ion-label>Mis Recetas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button id="Inicio" [autofocus]="true" value="0">
+      <ion-label>Inicio</ion-label>
+    </ion-segment-button>
+    <ion-segment-button id="Sopa" value="1">
+      <ion-label>Guarnición</ion-label>
+    </ion-segment-button>
+    <ion-segment-button id="Comida" value="2">
+      <ion-label>Comidas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button id="Postre" value="3">
+      <ion-label>Postres</ion-label>
+    </ion-segment-button>
+    <ion-segment-button id="Bebida" value="4">
+      <ion-label>Bebidas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button id="BebidaAlcholica" value="5">
+      <ion-label>Bebidas Alcoholicas</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <div id="DivCarousel" class="carousel">
+    <div class="carouselItem">
+      <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectMyRecipes , index as position">
+        <div (click)="SeeCardMyRecipes(i,position)" class="card">
+          <div>
+            <img class="CardImg" src="{{i.webviewPath}}">
+          </div>
+          <div class="CardMain">
+            <h3> {{i.Name}} </h3>
+            <p> {{i.Portions}} </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carouselItem">
+      <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectHome">
+        <div (click)="SeeCard(i.id)" class="card">
+          <div>
+            <img class="CardImg" src="{{i.webviewPath}}">
+          </div>
+          <div class="CardMain">
+            <h3> {{i.Name}} </h3>
+            <p> {{i.Portions}} </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carouselItem">
+      <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectGarnish">
+        <div (click)="SeeCard(i.id)" class="card">
+          <div>
+            <img class="CardImg" src="{{i.webviewPath}}">
+          </div>
+          <div class="CardMain">
+            <h3> {{i.Name}} </h3>
+            <p> {{i.Portions}} </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carouselItem">
+      <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectMel">
+        <div (click)="SeeCard(i.id)" class="card">
+          <div>
+            <img class="CardImg" src="{{i.webviewPath}}">
+          </div>
+          <div class="CardMain">
+            <h3> {{i.Name}} </h3>
+            <p> {{i.Portions}} </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carouselItem">
+      <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectDessert">
+        <div (click)="SeeCard(i.id)" class="card">
+          <div>
+            <img class="CardImg" src="{{i.webviewPath}}">
+          </div>
+          <div class="CardMain">
+            <h3> {{i.Name}} </h3>
+            <p> {{i.Portions}} </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carouselItem">
+      <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectDrink">
+        <div (click)="SeeCard(i.id)" class="card">
+          <div>
+            <img class="CardImg" src="{{i.webviewPath}}">
+          </div>
+          <div class="CardMain">
+            <h3> {{i.Name}} </h3>
+            <p> {{i.Portions}} </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carouselItem">
+      <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectAlcoholicDrinks">
+        <div (click)="SeeCard(i.id)" class="card">
+          <div>
+            <img class="CardImg" src="{{i.webviewPath}}">
+          </div>
+          <div class="CardMain">
+            <h3> {{i.Name}} </h3>
+            <p> {{i.Portions}} </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,52 @@
+.MarginToolbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+.MarginBtnBack{
+    display: flex;
+}
+
+.TextProcedure{
+    border: 1px none #c5c5c5;
+  padding: 5px 10px;
+  font-size: 20px;
+
+  display: block;
+  margin-left: 10px;
+  width: 95%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
+  field-sizing: content;
+}
+.DivTittleName{
+    display: flex;
+    justify-content: center;
+}
+.backgroundColorBlue{
+    background: #6C82F2;
+}
+.MarginProcedure{
+    margin-bottom: 10px;
+}
+.DivButtons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.BtnSave{
+    background-color:#12F91B ;
+    color: black;
+}
+.BtnCancel{
+    background:#F41010 ;
+    color: white;
+}
+.SizeBtn{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <div class="DivHeader">
+        <ion-buttons slot="start">
+          <ion-back-button default-href="#"></ion-back-button>
+        </ion-buttons>
+      <ion-title>Receta</ion-title>
+      <img id="Add"  src="../assets/icon/IconAdd.png">
+    </div>
+    
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div name="Header">
+    <div class="DatosImg">
+      <div>
+        <label for="subirimagen">
+          <img for="subirimagen" class="CardImg" [src]="UrlPhoto" >
+        </label>
+      </div>
+      <div>
+        <p class="paddingLeft">Agregar Foto Del Medicamento (OPCIONAL)</p>
+        <ion-button class="paddingLeft" id="TakePhoto">Tomar Foto</ion-button>
+      </div>
+        
+    </div>
+  </div>
+  
+  <div class="inputName">
+    <div class="">
+      <ion-input id="InputName" label="Nombre Receta:" [counter]="true" maxlength="30"></ion-input>
+    </div>
+    <div >
+      <select id="InputPortions" class="Margin">
+        <option selected disabled value="">Establecer Cantidad de Porcion</option>
+        <option value="0">1 Persona</option>
+        <option value="1">2 Personas</option>
+        <option value="2">3 Personas</option>
+        <option value="3">4 Personas</option>
+        <option value="4">+5 Personas</option>
+      </select>
+    </div>
+    <div >
+      <h5>Ingredientes:</h5>
+      <div id="ingredients">
+        <div >
+          <label >*</label>
+          <input autocomplete="off" class="InputIngredients" id="cosa">
+        </div>
+      </div>
+    </div>
+    <div>
+      <h5>Procedimiento:</h5>
+      <textarea id="TextAreaProcedure" class="TextArea"></textarea>
+    </div>
+  </div>
+</ion-content>

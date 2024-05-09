@@ -1,0 +1,41 @@
+.MarginToolbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+img{
+    width: 40px;
+    height: 40px;
+    margin: 0 3px;
+}
+.MarginBtnBack{
+    display: flex;
+}
+
+.TextProcedure{
+    border: 1px none #c5c5c5;
+  padding: 5px 10px;
+  font-size: 20px;
+
+  display: block;
+  margin-left: 10px;
+  width: 95%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
+  field-sizing: content;
+}
+.DivTittleName{
+    display: flex;
+    justify-content: center;
+}
+.backgroundColorBlue{
+    background: #6C82F2;
+}
+.Toolbar{
+    padding: 1px;
+}
+.MarginProcedure{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "AppRecetario",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

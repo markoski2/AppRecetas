@@ -1,0 +1,95 @@
+.DivHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+}
+
+.colorblue {
+  background: #6C82F2;
+}
+
+ion-label {
+  color: white;
+}
+
+ion-title {
+  color: white;
+}
+img{
+  width: 100px;
+  height: 111px;
+  aspect-ratio: 16/9;
+}
+
+.carousel {
+  width: 700%;
+  transform: translateX(-14.2%);
+  display: flex;
+  transition: all 1s ease;
+}
+
+.carouselItem {
+  width: 100%;
+}
+
+.CardImg {
+  width: 100px;
+  margin: 10px;
+  border: 3px solid black
+}
+
+.card {
+  width: 100%;
+  display: inline-flex;
+  border: 2px solid #D8D8D8;
+  background-color: #01EA96; //1CC2E7
+  margin-top: 10px;
+}
+
+.CardMain {
+  width: 350px;
+  padding-left: 20px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+.ImgAdd {
+  width: 40px;
+  height: 40px;
+}
+h3,p{
+  color: black;
+  
+}
+
+@media screen and (min-width: 500px){
+  .card {
+    width: 300px;
+  }
+  .CardImg {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border: 3px solid black
+  }
+  
+}
+
+@media screen and (min-width: 760px){
+  .card {
+    width: 350px;
+  }
+  .carouselItem {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 30px;
+    align-content: flex-start;
+  }
+
+}
+
+
