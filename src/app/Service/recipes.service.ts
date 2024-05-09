@@ -117,7 +117,7 @@ export class RecipesService {
   filepath: "../../../assets/ImgRecipes/SpaguetiCarbonara.jpg",
   webviewPath: "../../../assets/ImgRecipes/SpaguetiCarbonara.jpg"
   }]
- 
+
   mel=[{
     id:"M:1",
     Name:"Morisqueta",
@@ -132,19 +132,19 @@ export class RecipesService {
     "*2 Chiles guajillos \n"+
     "*1/4 de diente de ajo\n",
     Procedure:"ARROZ\n"+
-    "1:Se lava el arroz.\n"+
-    "2:Se le agrega el agua en una olla y se espera a que este caliente el agua.\n"+
-    "3:Se pone media cebolla y un poco de sal.\n"+
-    "4:Ya que hierva el agua se pone el arroz.\n"+
-    "5:Se tapa y se pone el fuego en lo mas minimo y se deja cocer hasta que se consuma el agua.\n"+
-    "6:Esperar a que seque el agua y que el arroz se esponje.\n"+
+    "1:Se lava el arroz\n"+
+    "2:Se le agrega el agua en una olla y se espera a que este caliente el agua\n"+
+    "3:Se pone media cebolla y un poco de sal\n"+
+    "4:Ya que hierva el agua se pone el arroz\n"+
+    "5:Se tapa y se pone el fuego en lo mas minimo y se deja cocer hasta que se consuma el agua\n"+
+    "6:Esperar a que seque el agua y que el arroz se esponje\n"+
     "CHILE\n"+
-    "1:En una olla se le agrega agua y se pone a coser el chile guajillo y los jitomates.\n"+
-    "2:Ya que hierva, se muele en una licuadora el ajo, cebolla, los jitomates y el chile.\n"+
-    "3:Se pone poco aceite en una cacerola y se frien unas rodajas de cebolla.\n"+
-    "4:En la cacerola se le echa y se cuela lo que se molio anteriormente en la licuadora.\n"+
-    "5:Se espera a que hierva.\n"+
-    "6:Ya que hierva se le apaga y se le agrega el queso y un poco de sal.\n",
+    "1:En una olla se le agrega agua y se pone a coser el chile guajillo y los jitomates\n"+
+    "2:Ya que hierva, se muele en una licuadora el ajo, cebolla, los jitomates y el chile\n"+
+    "3:Se pone poco aceite en una cacerola y se frien unas rodajas de cebolla\n"+
+    "4:En la cacerola se le echa y se cuela lo que se molio anteriormente en la licuadora \n"+
+    "5:Se espera a que hierva\n"+
+    "6:Ya que hierva se le apaga y se le agrega el queso y un poco de sal\n",
     CountIngredients:9,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
