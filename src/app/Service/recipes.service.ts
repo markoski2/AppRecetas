@@ -137,7 +137,7 @@ export class RecipesService {
     CountIngredients:0,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
-  },{
+  },{ 
     id:"G:8",
     Name:"Frijoles refritos",
     Portions:"4 Personas",
