@@ -116,6 +116,43 @@ export class RecipesService {
   CountIngredients:0,
   filepath: "../../../assets/ImgRecipes/SpaguetiCarbonara.jpg",
   webviewPath: "../../../assets/ImgRecipes/SpaguetiCarbonara.jpg"
+  },{
+    id:"G:7",
+    Name:"Espagueti con atún",
+    Portions:"+5 Personas",
+    Ingredients:"*1/2 taza de aceite de oliva\n"+
+    "*4 dientes de ajo finamente picado\n"+
+    "*1 cebolla finamente picada\n"+
+    "*1 taza de perejil finamente picado\n"+
+    "*1 lata de 850 gramos de puré de jitopmate\n"+
+    "*Hierbas de olor al gusto (laurel, tomillo y mejorana)\n"+
+    "*3 latas de atún\n"+
+    "*1 taza de aceitunas\n"+
+    "*250 gramos de espagueti cocido\n",
+    Procedure:"1:En una cacerola caliente agregar un cuarto de taza de aceite de oliva.\n"+
+    "2:Freir el ajo y la cebolla. Agregar el perejil y el jitomate. HIerva durante ocho minutos.\n"+
+    "3:Agregar las hierbas de olor, sal y pimienta. Deje sazonar por unos minutos mas y agregar los ingredientes restantes, menos el espagueti.\n"+
+    "4:Deje hervir durante cinco minutos a fuego lento.\n"+
+    "5:Vierta sobre el espagueti escurrido.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/icon/IconMenu.png",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{
+    id:"G:8",
+    Name:"Frijoles refritos",
+    Portions:"4 Personas",
+    Ingredients:"*1/4 de taza de aceite\n"+
+    "*1/2 taza de cebolla finamente picada\n"+
+    "*7 tazas de frijoles cocidos\n"+
+    "*Sal, al gusto\n"+
+    "*totopos para servirlos, al gusto (OPCIONAL)\n",
+    Procedure:"1:Caliente de aceite en un sartén y frie la cebolla.\n"+
+    "2:Vierta los frijoles y macháquelos.\n"+
+    "3:Refriéndolos hasta que sequen.\n"+
+    "4:Ajustar la cantidad de sal si es necesario y sirva con totopos.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/icon/IconMenu.png",
+    webviewPath: "../../../assets/icon/IconMenu.png"
   }]
  
   mel=[{
@@ -287,6 +324,64 @@ export class RecipesService {
     CountIngredients:5,
     filepath: "../../../assets/ImgRecipes/MilanesaCordon.jpg",
     webviewPath: "../../../assets/ImgRecipes/MilanesaCordon.jpg"
+  },{
+    id:"M:9",
+    Name:"Ejotes con huevo",
+    Portions:"1 Persona",
+    Ingredients:"*3/4 de kilo de ejotes picados y cocidos\n"+
+    "*2 Cucharadas de aceite\n"+
+    "*1 Cebolla finamente picada\n"+
+    "*2 Huevos ligeramente batidos\n"+
+    "*Sal y pimienta, al gusto\n",
+    Procedure:"1:Escurra perfectamente los ejotes.\n"+
+    "2:En una cacerola caliente el aceite y frie la cebolla hasta que tenga un tono translúcido.\n"+
+    "3:Agregue los ejotes y vierta el huevo.\n"+
+    "4:Cocine a fuego bajo hasta que el huevo se seque.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/icon/IconMenu.png",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{
+    id:"M:10",
+    Name:"Papas con longaniza o chorizo",
+    Portions:"+5 Personas",
+    Ingredients:"*1 kilo de longaniza o chorizo\n"+
+    "*2 cebollas finamente picadas\n"+
+    "*1 kilño de papas cocidas y peladas\n"+
+    "*Sal al gusto\n",
+    Procedure:"1:Fría la longaniza o el chorizo hasta dorarla ligeramente.\n"+
+    "2:Agregue la cebolla y friela por unos minutos.\n"+
+    "3:Agregue las papas y agrege sal al gusto.\n"+
+    "4:Deje dorar ligeramente.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/PapasLonganiza.jpg",
+    webviewPath: "../../../assets/ImgRecipes/PapasLonganiza.jpg"
+  },{
+    id:"M:11",
+    Name:"Pollo al vino",
+    Portions:"+5 Personas",
+    Ingredients:"*1/2 taza de tocino picado\n"+
+    "*1 1/2 tazas de vino tinto\n"+
+    "*1/4 de taza de brandy\n"+
+    "*4 cucharadas de pasta de jitomate\n"+
+    "*Oregano, al gusto\n"+
+    "*2 hojas de laurel\n"+
+    "*Tomillo al gusto\n"+
+    "*Sal y pimienta, al gusto\n"+
+    "*2 dientes de ajo finamente picado\n"+
+    "*24 cebollitas de cambray sin rabo\n"+
+    "*2 tazas de champiñones medianos\n"+
+    "*6 piernas con muslo\n",
+    Procedure:"1:Coloque el tocino en un recipiente hondo para microondas.\n"+
+    "2:Cocínelo a alta potencia durante un minuto o hasta que este dorado.\n"+
+    "3:Saque el tocino y apartelo.\n"+
+    "4:Sobre la grasa que quedo agregueel vino, la pasta de jitomate, el oregano, laurel, tomillo, sal, pimienta, ajo, cebollitas y champiñones.\n"+
+    "5:Tape y cocine a temperatura mediana durante 10 minutos revolviendo a la mitad de la cocción.\n"+
+    "6:Agregue el tocino, las piezas de pollo.\n"+
+    "7:Procure que las piezas queden bien cubiertas con la salsa.\n"+
+    "8:Tape y cocine a durante 10 minutos o hasta que el pollo este tierno.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/PolloVino.jpg",
+    webviewPath: "../../../assets/ImgRecipes/PolloVino.jpg"
   }]
 
   beverege=[{
@@ -346,6 +441,16 @@ export class RecipesService {
     CountIngredients:0,
     filepath: "../../../assets/ImgRecipes/LicuadoFresaKiwi.jpg",
     webviewPath: "../../../assets/ImgRecipes/LicuadoFresaKiwi.jpg"
+  },{
+    id:"B:5",
+    Name:"Jugo de fresa y naranja",
+    Portions:"+5 Personas",
+    Ingredients:"*1/2 kilo de fresas\n"+
+    "*1 litro de jugo de naranja\n",
+    Procedure:"1:Licue las fresas con el jugo de naranja.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/icon/IconMenu.png",
+    webviewPath: "../../../assets/icon/IconMenu.png"
   }]
 
   
