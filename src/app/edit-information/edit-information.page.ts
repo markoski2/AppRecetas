@@ -107,8 +107,8 @@ export class EditInformationPage implements OnInit {
         this.router.navigate(['/'])
         
         break;
-      case 'G':
-        this.recipes.Garnish[parseInt(id.split(":")[1])-1]!=this.Information
+      case 'A':
+        this.recipes.Accompaniments[parseInt(id.split(":")[1])-1]!=this.Information
         break;
       case 'M':
         this.recipes.mel[parseInt(id.split(":")[1])-1]!=this.Information
@@ -118,9 +118,6 @@ export class EditInformationPage implements OnInit {
         break;
       case 'D':
         this.recipes.Dessert[parseInt(id.split(":")[1])-1]!=this.Information
-        break;
-      case 'A':
-        this.recipes.AlcoholicDrink[parseInt(id.split(":")[1])-1]!=this.Information
         break;
 
     }

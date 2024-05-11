@@ -14,7 +14,7 @@ export class CategoryPage implements OnInit {
   constructor(private router:Router,private recipes:RecipesService,private bd:PhotoService) { }
   ObjectMyRecipes:InformationCard[]=[]
   ObjectHome:InformationCard[]=[]
-  ObjectGarnish:InformationCard[]=[]
+  ObjectAccompaniments:InformationCard[]=[]
   ObjectMel:InformationCard[]=[]
   ObjectDessert:InformationCard[]=[]
   ObjectDrink:InformationCard[]=[]
@@ -34,27 +34,41 @@ export class CategoryPage implements OnInit {
       var Content=document.getElementById("DivCarousel")
       Content!.style.transform = "translateX(-16.6%)";
     })
+
     document.getElementById("Sopa")?.addEventListener("click",()=>{
       var Content=document.getElementById("DivCarousel")
-      this.ObjectGarnish=this.recipes.Garnish
+      this.ObjectAccompaniments=[]
+      for(let i=0;i<5;i++){
+        this.ObjectAccompaniments.push(this.recipes.Accompaniments[i])
+      }
       Content!.style.transform = "translateX(-33.32%)";
     })
+
     document.getElementById("Comida")?.addEventListener("click",()=>{
       var Content=document.getElementById("DivCarousel")
-      this.ObjectMel=this.recipes.mel
+      this.ObjectMel=[]
+      for(let i=0;i<5;i++){
+        this.ObjectMel.push(this.recipes.mel[i])
+      }
       Content!.style.transform = "translateX(-50%)";
     })
     document.getElementById("Postre")?.addEventListener("click",()=>{
       var Content=document.getElementById("DivCarousel")
-      this.ObjectDessert=this.recipes.Dessert
+      this.ObjectDessert=[]
+      for(let i=0;i<5;i++){
+        this.ObjectDessert.push(this.recipes.Dessert[i])
+      }
       Content!.style.transform = "translateX(-66.68%)";
     })
     document.getElementById("Bebida")?.addEventListener("click",()=>{
       var Content=document.getElementById("DivCarousel")
-      this.ObjectDrink=this.recipes.beverege
+      this.ObjectDrink=[]
+      for(let i=0;i<5;i++){
+        this.ObjectDrink.push(this.recipes.beverege[i])
+      }
       Content!.style.transform = "translateX(-83.35%)";
     })
-    /*
+    /*ButtonMostrarMas
     document.getElementById("BebidaAlcholica")?.addEventListener("click",()=>{
       var Content=document.getElementById("DivCarousel")
       this.ObjectAlcoholicDrinks=this.recipes.AlcoholicDrink
@@ -66,13 +80,17 @@ export class CategoryPage implements OnInit {
 
   }
 
+  public GoHomeCategory(Category:string){
+    this.router.navigate(['/category/home',Category])
+  }
+
   public OptionStar(){
     this.ObjectHome=[]
     try {
       this.ObjectHome.push(this.GetMel())
       this.ObjectHome.push(this.GetBeverege())
       this.ObjectHome.push(this.GetDessert())
-      this.ObjectHome.push(this.GetGarnish())
+      this.ObjectHome.push(this.GetAccompaniments())
     } catch (error) {}
   }
 
@@ -86,8 +104,8 @@ export class CategoryPage implements OnInit {
       return this.recipes.Dessert[this.NumberRandom(this.recipes.Dessert.length)]
   }
 
-  private GetGarnish(){
-      return this.recipes.Garnish[this.NumberRandom(this.recipes.Garnish.length)]
+  private GetAccompaniments(){
+      return this.recipes.Accompaniments[this.NumberRandom(this.recipes.Accompaniments.length)]
   }
   private GetBeverege(){
       return this.recipes.beverege[this.NumberRandom(this.recipes.beverege.length)]

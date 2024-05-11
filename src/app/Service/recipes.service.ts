@@ -8,8 +8,8 @@ export class RecipesService {
 
   SaveInformation?:InformationCard
 
-  Garnish=[{
-    id:"G:1",
+  Accompaniments=[{
+    id:"A:1",
     Name:"Sopa de Spaghetti Blanco",
     Portions:"+5 Personas",
     Ingredients:"*Spaghetti\n*Adobera\n*1 o 2 Chiles poblanos (azados y rebanados)\n*2 Dientes de ajo (Picados)"+
@@ -21,7 +21,7 @@ export class RecipesService {
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
   },{
-    id:"G:2",
+    id:"A:2",
     Name:"Sopa de Spaghetti Rojo",
     Portions:"+5 Personas",
     Ingredients:"*Spaghetti\n*2 Jitomates\n*1 Knorr suiza o similar\n*1/4 de Crema\n*1 Cebolla"+
@@ -36,7 +36,7 @@ export class RecipesService {
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
   },{
-    id:"G:3",
+    id:"A:3",
     Name:"Arroz Rojo",
     Portions:"3 Personas",
     Ingredients:"*1/4 de Arroz\n"+
@@ -57,7 +57,7 @@ export class RecipesService {
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
   },{
-    id:"G:4",
+    id:"A:4",
     Name:"Arroz Blanco",
     Portions:"3 Personas",
     Ingredients:"*1/4 de Arroz\n"+
@@ -76,7 +76,7 @@ export class RecipesService {
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
   },{
-    id:"G:5",
+    id:"A:5",
     Name:"Arroz a la jardinera",
     Portions:"4 Personas",
     Ingredients:"*1 taza de arroz\n"+
@@ -97,7 +97,7 @@ export class RecipesService {
     filepath: "../../../assets/ImgRecipes/ArrozJardinera.jpg",
     webviewPath: "../../../assets/ImgRecipes/ArrozJardinera.jpg"
   },{
-    id:"G:6",
+    id:"A:6",
   Name:"Espagueti Carbonara",
   Portions:"+5 Personas",
   Ingredients:"*2 cucharadas de acite de oliva\n"+
@@ -117,7 +117,7 @@ export class RecipesService {
   filepath: "../../../assets/ImgRecipes/SpaguetiCarbonara.jpg",
   webviewPath: "../../../assets/ImgRecipes/SpaguetiCarbonara.jpg"
   },{
-    id:"G:7",
+    id:"A:7",
     Name:"Espagueti con atún",
     Portions:"+5 Personas",
     Ingredients:"*1/2 taza de aceite de oliva\n"+
@@ -138,7 +138,7 @@ export class RecipesService {
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
   },{ 
-    id:"G:8",
+    id:"A:8",
     Name:"Frijoles refritos",
     Portions:"4 Personas",
     Ingredients:"*1/4 de taza de aceite\n"+

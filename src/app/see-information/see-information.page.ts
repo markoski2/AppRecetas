@@ -72,7 +72,7 @@ export class SeeInformationPage implements OnInit {
         this.PositionMyRecipes = parseInt(id.split(":")[1])
         break;
       case 'G':
-        this.Information = this.recipes.Garnish[parseInt(id.split(":")[1]) - 1]
+        this.Information = this.recipes.Accompaniments[parseInt(id.split(":")[1]) - 1]
         break;
       case 'M':
         this.Information = this.recipes.mel[parseInt(id.split(":")[1]) - 1]

@@ -14,7 +14,7 @@
       <ion-label>Inicio</ion-label>
     </ion-segment-button>
     <ion-segment-button id="Sopa" value="1">
-      <ion-label>Guarnición</ion-label>
+      <ion-label>Acompañamientos</ion-label>
     </ion-segment-button>
     <ion-segment-button id="Comida" value="2">
       <ion-label>Comidas</ion-label>
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="carouselItem">
-      <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectGarnish">
+      <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectAccompaniments">
         <div (click)="SeeCard(i.id)" class="card">
           <div>
             <img class="CardImg" src="{{i.webviewPath}}">
@@ -73,6 +73,9 @@
 
           </div>
         </div>
+      </div>
+      <div class="MarginButton">
+        <ion-button (click)="GoHomeCategory('A')">Mostrar mas</ion-button>
       </div>
     </div>
     <div class="carouselItem">
@@ -88,6 +91,9 @@
           </div>
         </div>
       </div>
+      <div class="MarginButton">
+        <ion-button (click)="GoHomeCategory('M')">Mostrar mas</ion-button>
+      </div>
     </div>
     <div class="carouselItem">
       <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectDessert">
@@ -102,6 +108,9 @@
           </div>
         </div>
       </div>
+      <div class="MarginButton">
+        <ion-button (click)="GoHomeCategory('D')">Mostrar mas</ion-button>
+      </div>
     </div>
     <div class="carouselItem">
       <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectDrink">
@@ -115,6 +124,9 @@
 
           </div>
         </div>
+      </div>
+      <div class="MarginButton">
+        <ion-button (click)="GoHomeCategory('B')">Mostrar mas</ion-button>
       </div>
     </div>
     <!--

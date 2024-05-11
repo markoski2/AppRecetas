@@ -7,7 +7,12 @@ const routes: Routes = [
   {
     path: '',
     component: CategoryPage
+  },
+  {
+    path: 'home/:category',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   }
+
 
 ];
 

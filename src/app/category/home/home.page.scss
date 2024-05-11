@@ -1,0 +1,97 @@
+//header
+.DivHeaderPart1{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+h1{
+    margin-left: 15px;
+}
+.ImgHeader{
+    width: 50px;
+    height: 40px;
+}
+.header{
+    background-image: linear-gradient(to top,white, #F97328 95%);
+    margin: 0;
+}
+// Card
+.carouselItem {
+    width: 100%;
+  }
+  
+  .CardImg {
+    width: 100px;
+    margin: 10px;
+    border: 3px solid black
+  }
+  
+  .card {
+    width: 100%;
+    display: inline-flex;
+    border: 2px solid #D8D8D8;
+    background-color: #01EA96; //1CC2E7
+    margin-top: 10px;
+  }
+  
+  .CardMain {
+    width: 350px;
+    padding-left: 20px;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: center;
+  }
+  .MarginButton{
+    display: flex;
+    justify-content: center;
+    margin:10px 0px;
+  }
+  
+//block category}
+.BlockRecomendation{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.backgroundTittler{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,rgb(255, 255, 255,0) , grey 85%);
+}
+.types1{
+    width: 300px;
+    height: 100px;
+    background-image: url("./../../../assets/icon/microondas.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.types2{
+    width: 150px;
+    height: 100px;
+    background-image: url("./../../../assets/icon/Facil.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.types3{
+    width: 150px;
+    height: 100px;
+    background-image: url("./../../../assets/icon/Horno.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.margintypes{
+    margin:15px 0;
+    border-radius: 20px;
+}
+h3{
+    color: white;
+    position: absolute;
+    height: 0;
+    margin: 10px;
+}
