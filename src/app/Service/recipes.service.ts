@@ -20,7 +20,7 @@ export class RecipesService {
     CountIngredients:8,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
-  },{
+  },{//FACIL
     id:"A:2",
     Name:"Sopa de Spaghetti Rojo",
     Portions:"+5 Personas",
@@ -35,7 +35,7 @@ export class RecipesService {
     CountIngredients:7,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
-  },{
+  },{//FACIL
     id:"A:3",
     Name:"Arroz Rojo",
     Portions:"3 Personas",
@@ -137,7 +137,7 @@ export class RecipesService {
     CountIngredients:0,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
-  },{ 
+  },{ //facil
     id:"A:8",
     Name:"Frijoles refritos",
     Portions:"4 Personas",
@@ -153,9 +153,77 @@ export class RecipesService {
     CountIngredients:0,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//SALSA
+    id:"A:9",
+    Name:"Salsa roja",
+    Portions:"+5 Personas",
+    Ingredients:"*15 chiles de árbol secos asados\n"+
+    "*Agua caliente\n"+
+    "*3 jitomates asados, picados sin piel ni semillas\n"+
+    "*1/4 de cebolla asada\n"+
+    "*1 diente de ajo asado\n"+
+    "*Sal al gusto\n"+
+    "*Aceite\n",
+    Procedure:"1:Hidrata los chiles en agua caliente hasta que se ablanden.\n"+
+    "2:Retira y lícualos un poco con el resto de los ingredientes.\n"+
+    "3:Sazona en un poco de aceite caliente y sirve fria.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//SALSA
+    id:"A:10",
+    Name:"Salsa verde",
+    Portions:"+5 Personas",
+    Ingredients:"*Agua, la necesaria\n"+
+    "*250 gr de tomates pelados, asados y en mitades\n"+
+    "*1/2  de cebolla en trozos asados\n"+
+    "*7 chiles de árbol asados\n"+
+    "*3 ramitas de cilantro picado\n"+
+    "*1 cucharada de aceite\n"+
+    "*Sal al gusto\n",
+    Procedure:"1:Cuece en suficiente agua los tomates con la cebolla y los chiles.\n"+
+    "2:Cuando los tomates estén suaves, retira un poco del agua y licua con ella los ingredientes anteriores junto con el cilantro.\n"+
+    "3:Sazona y vierte en una cacerola con aceite y añade sal.\n"+
+    "4:Sirve fría\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//FACIL
+    id:"A:11",
+    Name:"Guacamole",
+    Portions:"2 Personas",
+    Ingredients:"*4 aguacates maduros\n"+
+    "*1 limón, solo el jugo\n"+
+    "*Sal y pimienta al gusto\n",
+    Procedure:"1:Corta por la mitad los aguacates y con una cuchara retirar la pulpa, machácala.\n"+
+    "2:Agregar el jugo de limon, sal y la pimienta. Mezclar perfectamente\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{
+    id:"A:12",
+    Name:"Nopales",
+    Portions:"+5 Personas",
+    Ingredients:"*6 nopales grandes, limpios y en cuadros\n"+
+    "*Aceite vegetal, lo necesario\n"+
+    "*1 cucharadita de bicarbonato de sodio\n"+
+    "*1/4 de cebolla picada\n"+
+    "*5 jitomates sin piel ni semillas en cuadros\n"+
+    "*Sal y pimienta al gusto\n"+
+    "*1/4 de taza de cilantro lavado y picado\n",
+    Procedure:"1:Asa los nopales en una sartén con poco aceite caliente y cuando comiencen a soltar liquido, agrega el bicarbonato.\n"+
+    "2:Retira y escurre el exceso de liquido.\n"+
+    "3:Frie con un poco más de aceite la cebolla, cuando esté transparente agrega el jitomate e integra.\n"+
+    "4:Regresa los nopales al sartén, la sal y la pimienta. Retira del fuego y espolvorea el cilantro picado.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//FACIL
+    id:"A:13",
+    Name:"Ensalada de pepino y rábanos",
+    Portions:"2 Personas",
+    Ingredients:"*2 pepinos en rodajas\n"+
+    "*6 a 10 rabanos en rodajas, dependiendo del tamaño\n"+
+    "*1 limon, solo el jugo\n"+
+    "*Sal, al gusto\n",
+    Procedure:"1:Intercala las rodajas de pepino y rábanos.\n"+
+    "2:Baña con el limón y la sal.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
   }]
 
-  mel=[{
+  mel=[{//FACIL
     id:"M:1",
     Name:"Morisqueta",
     Portions:"4 Personas",
@@ -185,7 +253,7 @@ export class RecipesService {
     CountIngredients:9,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
-  },{
+  },{//FACIL
     id:"M:2",
     Name:"Alambres",
     Portions:"4 Personas",
@@ -203,7 +271,7 @@ export class RecipesService {
     CountIngredients:5,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
-  },{
+  },{//FACIL
     id:"M:3",
     Name:"CHILAQUIILES",
     Portions:"+5 Personas",
@@ -243,7 +311,7 @@ export class RecipesService {
     CountIngredients:8,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
-  },{
+  },{//FACIL
     id:"M:5",
     Name:"CROQUETAS DE ATUM",
     Portions:"4 Personas",
@@ -324,7 +392,7 @@ export class RecipesService {
     CountIngredients:5,
     filepath: "../../../assets/ImgRecipes/MilanesaCordon.jpg",
     webviewPath: "../../../assets/ImgRecipes/MilanesaCordon.jpg"
-  },{
+  },{//FACIL
     id:"M:9",
     Name:"Ejotes con huevo",
     Portions:"1 Persona",
@@ -340,7 +408,7 @@ export class RecipesService {
     CountIngredients:0,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
-  },{
+  },{//FACIL
     id:"M:10",
     Name:"Papas con longaniza o chorizo",
     Portions:"+5 Personas",
@@ -382,6 +450,30 @@ export class RecipesService {
     CountIngredients:0,
     filepath: "../../../assets/ImgRecipes/PolloVino.jpg",
     webviewPath: "../../../assets/ImgRecipes/PolloVino.jpg"
+  },{//MICROONDAS
+    id:"M:12",
+    Name:"Albondigon",
+    Portions:"+5 Personas",
+    Ingredients:"*1 kilo de carne de res, molida\n"+
+    "*1 cebolla finamente picada\n"+
+    "*1 taza de pimiento morrón verde\n"+
+    "*2 huevos ligeramente batidos\n"+
+    "*1/2 bolillo remojado en una taza de leche\n"+
+    "*3 cucharadas de perejil finamente picados\n"+
+    "*Sal y pimienta, al gusto\n"+
+    "*1 taza de champiñones rebanados\n"+
+    "*1 cucharadita de royal\n"+
+    "*1/2 taza de jamón cocido, finamente picado"+
+    "*4 cucharadas de salsa catsup\n"+
+    "*4 tiras de tocino\n",
+    Procedure:"1:Revuelva todos los ingredientes excepto la salsa catsup y el tocino.\n"+
+    "2:Colóquelos sobre un molde para panqué especial para microondas ligeramente enmantequillado.\n"+
+    "3:Unte la salsa catsup y coloque las rebanadas de tocino.\n"+
+    "4:Cocínelo tapando durante 5 minutos.\n"+
+    "5:Rote el molde  y cocínelo dutante 5 minutos más.\n"+
+    "6:Destápelo y cocínelo durante 8 minutos.\n"+
+    "7:Deje reposar 5 minutos y sírvalo.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
   }]
 
   beverege=[{
@@ -416,7 +508,7 @@ export class RecipesService {
     CountIngredients:0,
     filepath: "../../../assets/ImgRecipes/JugoMandarina.jpg",
     webviewPath: "../../../assets/ImgRecipes/JugoMandarina.jpg"
-  },{
+  },{//FACIL 
     id:"B:3",
   Name:"Jugo Con Vitamina C",
   Portions:"1 Persona",
@@ -441,7 +533,7 @@ export class RecipesService {
     CountIngredients:0,
     filepath: "../../../assets/ImgRecipes/LicuadoFresaKiwi.jpg",
     webviewPath: "../../../assets/ImgRecipes/LicuadoFresaKiwi.jpg"
-  },{
+  },{//FACIL
     id:"B:5",
     Name:"Jugo de fresa y naranja",
     Portions:"+5 Personas",
@@ -451,10 +543,133 @@ export class RecipesService {
     CountIngredients:0,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//FACIL
+    id:"B:6",
+    Name:"Batido de fresa",
+    Portions:"4 Personas",
+    Ingredients:"*500 gramos de fresa\n"+
+    "*400 ml de leche\n"+
+    "*30 gramos de azúcar\n",
+    Procedure:"1:Lavar muy bien las fresas, cortar las hojas y retirar el tallo.\n"+
+    "2:Agregar la fresa a la licuadora, añadir el azucar y la leche.\n"+
+    "3:Batir hasta que quede completamente liquida.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{// FRIO
+    id:"B:7",
+    Name:"Granizado de sandía",
+    Portions:"2 Personas",
+    Ingredients:"*250 gramos de sandia\n"+
+    "*150 gramos de hielo en cubos\n"+
+    "*Azucar (OPCIONAL)\n"+
+    "*Jugo de limón\n"+
+    "*Hojas de menta (OPCIONAL)\n",
+    Procedure:"1:Cortar la sandia en cubos, retirando las semillas y la cascara de la sandia.\n"+
+    "2:Dejar reposar la sandia en el refrigerador hasta que este congelada. \n"+
+    "3:Cuando la sandia se encuentre congelada, agregarla en la licuadora la sandia, el hielo, el jugo de limón y el azúcar, hasta tener una textura granizado.\n"+
+    "4:Servirlo en un vaso y decorar con las hojas de menta.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//FRIO
+    id:"B:8",
+    Name:"Batido de moras y durazno",
+    Portions:"1 Persona",
+    Ingredients:"*9 moras\n"+
+    "*1 durazno\n"+
+    "*50 ml de agua\n"+
+    "*1 cubo de hielo\n"+
+    "*1 hoja de menta (OPCIONAL)\n",
+    Procedure:"1:lavar muy bien la fruta.\n"+
+    "2:En la licuadora mezclar las moras y el durazno, colar si no se quiere sentir las semillas.\n"+
+    "3:Batir la mezcla de las frutas con el agua y el hielo. Servir en un vaso\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{
+    id:"B:9",
+    Name:"Jugo de jitomate y apio",
+    Portions:"1 Persona",
+    Ingredients:"*6 jitomates\n"+
+    "*2 apios\n",
+    Procedure:"1:Lavar perfectamente los ingredientes.\n"+
+    "2:icuar los ingredientes sin las hojas del apio.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//FACIL
+    id:"B:10",
+    Name:"Jugo de jitomate",
+    Portions:"1 Persona",
+    Ingredients:"*2 jitomates\n"+
+    "*1 taza de agua\n"+
+    "*1 limón\n",
+    Procedure:"1:Lavar muy bien lo jitomates y cortarlos en cuatro partes.\n"+
+    "2:Licuar con un poco de agua. Se podria agregar un poco mas, dependiendo de la consistencia que se desea obtener.\n"+
+    "3:Añadir el jugo de limon para darle sabor.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//CALIENTE
+    id:"B:11",
+    Name:"Atole de Mazapán",
+    Portions:"+5 Personas",
+    Ingredients:"*4 tazas de leche\n"+
+    "*1 taza de agua\n"+
+    "*1/2 taza de leche evaporada\n"+
+    "*1/2 taza de leche condensada\n"+
+    "*5 mazapanes\n"+
+    "*5 cucharadas de fécula de maíz\n"+
+    "*1 raja de canela\n",
+    Procedure:"1:En la licuadora agregar la leche, el agua, la leche evaporada, leche condensada, los mazapanes y la fécula de maíz.\n"+
+    "2:Licuar hasta conseguir una mezcla homogénea.\n"+
+    "3:Colocar la mezcla en una olla y calienta a fuego medio.\n"+
+    "4:Agrega la canela y cocina hasta que espese.\n"+
+    "5:Servir el atole\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//CALIENTE
+    id:"B:12",
+    Name:"Atole de Oreo",
+    Portions:"+5 Personas",
+    Ingredients:"*1/2 taza de agua\n"+
+    "*6 tazas de leche\n"+
+    "*25 galletas de oreo\n"+
+    "*2 cucharadas de fécula de maíz o Maicena\n"+
+    "*1 vara de canela\n",
+    Procedure:"1:Disolver la fécula de maiz en media taza de agua\n"+
+    "2:Calentar la leche con la canela hasta que comience a hervir.\n"+
+    "3:En la licuadora agregar las galletas hasta que estren trituradas. Agregar 2 tazas de leche caliente.\n"+
+    "4:En una olla agregar la fécula y la mezcla de las galletas.\n"+
+    "5:Calienta el atole moviendo constantemente para evitar que se pegue en el fondo.\n"+
+    "6:Servir.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{
+    id:"B:13",
+    Name:"Té de canela",
+    Portions:"+5 Personas",
+    Ingredients:"*1 litro de agua\n"+
+    "*3 rollitos de canela\n"+
+    "*\Azucar (OPCIONAL)\n",
+    Procedure:"1:En una olla agregar un litro de agua y poner al fuego\n"+
+    "2:Cuando el agua este apunto de hervir agregar los 3 rollitos de canela y dejar por 4 minutos. \n"+
+    "3:Dejar reposar por 5 minutos.\n"+
+    "4:Servir y agregar el azucar si lo deseas.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//CALIENTE
+    id:"B:14",
+    Name:"Blackberry Hot Chocolate",
+    Portions:"2 Personas",
+    Ingredients:"*16 moras\n"+
+    "*3 cucharadas de azucar\n"+
+    "*1/2 cucharada de vainilla\n"+
+    "*3 tazas de leche\n"+
+    "*1 barra Chocolate amargo\n"+
+    "*2 cucharadas de agua\n"+
+    "*Crema batida (OPCIONAL)\n"+
+    "*Malvadisco (OPCIONAL)\n",
+    Procedure:"1:Para preparar el coulis de moras, en un sarten cocine las moras, la azucar y las 2 cucharadas de agua en fuego moderado, hasta que las moras esten blandas.\n"+
+    "2:En un recipiente empuje y machacar el contenido del sarten a traves de un colador o si lo prefieres puedes utilizar la licuadora y depositar el contenido utilizando un colador. Desechar lo que quede en el colador.\n"+
+    "3:Caliente la leche hasya que esté hirviendo. Mientras se calienta la leche pica el chocolate y colocalosen la licuadora.\n"+
+    "4:En la licuadora con el chocolate agrege la vainilla y la leche.\n"+
+    "5:Si al finalizar deseas adornar con crema batida reserva 1 cucharada del coulis de mora y vierta el resto en la licuadora. Si no deseas adornar vierta todo el coulis de mora.\n"+
+    "6:mezcla hasta que el chocolate se derrita y la bebida este espumosa.\n"+
+    "7:Vierta en tazas y adornar , si lo deseas, con crema batida, malvavisco, una cucharada del coulis y 1 mora por taza.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
   }]
 
   
-  Dessert=[{
+  Dessert=[{//FACIL || FRIO
     id:"D:1",
   Name:"FLAN de chocolate con canela",
   Portions:"+5 Personas",
@@ -477,7 +692,7 @@ export class RecipesService {
   CountIngredients:6,
   filepath: "../../../assets/ImgRecipes/FlanChocolate.jpg",
   webviewPath: "../../../assets/ImgRecipes/FlanChocolate.jpg"
-  },{
+  },{//FRIO
     id:"D:2",
   Name:"Sándwiches de helado tradicionales",
   Portions:"+5 Personas",
@@ -535,7 +750,7 @@ export class RecipesService {
   CountIngredients:11,
   filepath: "../../../assets/icon/IconMenu.png",
   webviewPath: "../../../assets/icon/IconMenu.png"
-  },{
+  },{//HORNO
     id:"D:4",
     Name:"Brownis de naranja a lo capuchino",
     Portions:"+5 Personas",
@@ -579,7 +794,7 @@ export class RecipesService {
   CountIngredients:0,
   filepath: "../../../assets/ImgRecipes/DulceDurazno.jpg",
   webviewPath: "../../../assets/ImgRecipes/DulceDurazno.jpg"
-  },{
+  },{//FACIL
     id:"D:6",
   Name:"Taquitos de jícama",
   Portions:"4 Personas",
@@ -614,7 +829,7 @@ export class RecipesService {
   CountIngredients:0,
   filepath: "../../../assets/ImgRecipes/PostreNaranja.jpg",
   webviewPath: "../../../assets/ImgRecipes/PostreNaranja.jpg"
-  },{
+  },{//HORNO
     id:"D:8",
   Name:"Tarta de frambuesas",
   Portions:"+5 Personas",
@@ -637,13 +852,67 @@ export class RecipesService {
   "8:Con un molde ciruclar, cortar la masa del tamaño deseado.\n"+
   "9:Untala con dos cucharadas de mermelada de frambuesa.\n"+
   "10:Hornear 20 minutos o hasta que esté ligeramente dorada.\n"+
-  "11:Dejarla enfriar, untar elk resto de la mermelada.\n"+
+  "11:Dejarla enfriar, untar el resto de la mermelada.\n"+
   "12:Cubre la superficie con frambuesas.\n"+
   "13:Si lo deseas, decorar con azúcar glass espolvoreada.\n"+
   "*\n",
   CountIngredients:0,
   filepath: "../../../assets/ImgRecipes/TartaFrambuesas.jpg",
   webviewPath: "../../../assets/ImgRecipes/TartaFrambuesas.jpg"
+  },{//MICROONDAS
+    id:"D:9",
+    Name:"Esquites",
+    Portions:"+5 personas",
+    Ingredients:"*50 gramos de manteca de puerco\n"+
+    "*1 cebolla finamente picada\n"+
+    "*Chile serrano picado al gusto\n"+
+    "*6 elotes tiernos desgranados\n"+
+    "*Sal, al gusto\n"+
+    "*Epazote finamente picado\n",
+    Procedure:"1:Poner la manteca en un recipiente para microondas y cocinar durante 2 minutos.\n"+
+    "2:Agregar la cebolla y el chile. Cocinar un minuto mas.\n"+
+    "3:añadir los elotes y tape el recipiente. Cocinar durante 6 minutos, revolviendo a mitad de cocción.\n"+
+    "4:Añadir el epazote, destape y cocine durante otros 3 minutos o hasta que el elote esté cocido.\n"+
+    "5:Añadir sal al gusto.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//MICROONDAS
+    id:"D:10",
+  Name:"Flan de queso",
+  Portions:"3 Personas",
+  Ingredients:"*200 gramos de queso philadelphia\n"+
+  "*370 gramos de leche condensada\n"+
+  "*4 huevos\n"+
+  "*500 ml de lec he\n"+
+  "*4 cucharadas de caramelo liquido\n"+
+  "*1 cucharadita de esencia de vainilla\n",
+  Procedure:"1:En un recipiente mezclar el queso, los 4 huevos, añadir la leche condensada, la leche, la esencia de vainilla hasta que quede bien mezclado.\n"+
+  "2:En un recipiente para microondas poner el caramelo líquido en el fondo del molde.\n"+
+  "3:Poner la mezcla en el recipiente para microondas y calentarlo por 15 minutos o hasta que este cuajado en el centro, picar con un calillo y si esta liquido poner por 5 minutos más o el tiempo que haga falta hasta que ya no este liquido.\n"+
+  "4:Dejar enfriar completamente antes de llevarlo al refrigerador. \n"+
+  "5:Dejar reposar por un minimo de 4 horas.\n",
+  webviewPath: "../../../assets/icon/IconMenu.png"
+  },{//Microondas || FACIL
+    id:"D:11",
+    Name:"Patatas gajo",
+    Portions:"3 Personas",
+    Ingredients:"*500 gramos de papas\n"+
+    "*1 cucharada de ajo en polvo\n"+
+    "*1 cucharada de cebolla en polvo\n"+
+    "*1 cucharada de hierbas provenzales (Hierbas finas)\n"+
+    "*1 cucharada de paprika\n"+
+    "*1 pizca de pimienta negra recién molida\n"+
+    "*1 chorro de aceite de oliva\n"+
+    "*1 pizca de sal\n",
+    Procedure:"1:Pelar las papas con un pelador de verduras.\n"+
+    "2:Con un cuchillo de cocina cortar cada papa a la mitad y cada mitad partirla por la mitad.\n"+
+    "Si tienes papas muy grandes, seguir cortando por la mitad hasta que obtengas el tamaño mas pequeño o un tamaño deseado.\n"+
+    "3:En un recipiente  añadir las papas y mezclar con las hierbas, el ajo en polvo, la cebolla en polvo, la paprika, una pizca de pimienta.\n"+
+    "4:Poner las papas ya mezcladas con las especias en un recipiente para microondas y añadir un chorrito pequeño de aceite de oliva y mezclar\n"+
+    "5:Tapar el recipiente con un papel film transparente y poner a calentar en el microondas por 5 minutos\n"+
+    "6:Al terminar los 5 minutos, retirar con mucho cuidado el papel procurando de no qumarse con el vapor que salga, ya que estara muy caliente.\n"+
+    "7:Revolver con una cuchara las papas y volver a cubrir con  el papel film. volver a cocinar por 5 minutos o hasta que las papas este suaves.\n"+
+    "8:Retirar con mucho cuidado el papel y añadir un poco de sal, al gusto.\n",
+    webviewPath: "../../../assets/icon/IconMenu.png"
   }]
 
   AlcoholicDrink=[{
