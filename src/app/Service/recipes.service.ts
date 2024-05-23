@@ -8,7 +8,25 @@ export class RecipesService {
 
   SaveInformation?:InformationCard
 
-  Accompaniments=[{
+  EasyAccompaniments:number[]=[1,2,7,10,12,15]
+  PrimaryAccompaniments:number[]=[11,12,13,14,17]
+  ThirdAccompaniments:number[]=[0,1,5,6,17]
+//=["","","","","","",""]
+  EasyMel:number[]=[0,1,2,4,8,9,13,15]
+  PrimaryMel:number[]=[11,15]
+  ThirdMel:number[]=[12]
+
+  EasyDrink:number[]=[2,4,5,6,9,14]
+  PrimaryDrink:number[]=[10,11,13,14,12]
+  ThirdDrink:number[]=[7,8]
+
+  EasyDessert:number[]=[0,5,8]
+  PrimaryDessert:number[]=[0,11]
+  ThirdDessert:number[]=[7,8,9]
+
+
+
+  Accompaniments=[{//PASTA
     id:"A:1",
     Name:"Sopa de Spaghetti Blanco",
     Portions:"+5 Personas",
@@ -18,9 +36,9 @@ export class RecipesService {
     "\n4:Se le agrega la leche ya que hierva un poco, se le agrega el Spaghetti (previamente se lava el Spaghetti con solo agua)\n"+
     "5:Ya que seque la leche se le apaga y ya que enfrie un pocose le agrega la crema y la adobera en cuadritos",
     CountIngredients:8,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
-  },{//FACIL
+    filepath: "../../../assets/ImgRecipes/EspaguetiBlanco.png",
+    webviewPath: "../../../assets/ImgRecipes/EspaguetiBlanco.png"
+  },{//FACIL PASTA
     id:"A:2",
     Name:"Sopa de Spaghetti Rojo",
     Portions:"+5 Personas",
@@ -33,8 +51,8 @@ export class RecipesService {
     "5:Se le agrega la leche ya que hierva un poco, se le agrega el Spaghetti (previamente se lava el Spaghetti con solo agua)\n"+
     "6:Se espera a que se enfrie y se le agrega la crema (OPCIONAL)",
     CountIngredients:7,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/EspaguetiRojo.png",
+    webviewPath: "../../../assets/ImgRecipes/EspaguetiRojo.png"
   },{//FACIL
     id:"A:3",
     Name:"Arroz Rojo",
@@ -54,8 +72,8 @@ export class RecipesService {
     "7:Se deja hervir, se tapa y se baja el fuego a lo mas minimo\n"+
     "8:Esperar a que seque el agua y que el arroz se esponje",
     CountIngredients:6,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/ArrozRojo.png",
+    webviewPath: "../../../assets/ImgRecipes/ArrozRojo.png"
   },{
     id:"A:4",
     Name:"Arroz Blanco",
@@ -73,8 +91,8 @@ export class RecipesService {
     "6:Se deja hervir y ya cuando este hirviendo se tapa y se le baja el fuego a lo mas minimo\n"+
     "7:Esperar a que seque el agua y que el arroz se esponje\n",
     CountIngredients:5,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/ArrozBlanco.png",
+    webviewPath: "../../../assets/ImgRecipes/ArrozBlanco.png"
   },{
     id:"A:5",
     Name:"Arroz a la jardinera",
@@ -94,9 +112,9 @@ export class RecipesService {
     "5:Agrege el caldo o agua y deja que suelte el hervor, durante el fuego y agrega la sal.\n"+
     "6:Cuece a fuego lenteto de 20 a 30 minutos o hasta que se consuma el agua.\n",
     CountIngredients:0,
-    filepath: "../../../assets/ImgRecipes/ArrozJardinera.jpg",
-    webviewPath: "../../../assets/ImgRecipes/ArrozJardinera.jpg"
-  },{
+    filepath: "../../../assets/ImgRecipes/ArrozJardinera.png",
+    webviewPath: "../../../assets/ImgRecipes/ArrozJardinera.png"
+  },{//PASTA
     id:"A:6",
   Name:"Espagueti Carbonara",
   Portions:"+5 Personas",
@@ -114,9 +132,9 @@ export class RecipesService {
   "3:Bate las yemas con la crema y el queso parmesano. Añade la mezcla de tocino y sazona con sal.\n"+
   "4:Mezcla con la pasta recién cocido. Espolvorea con el perejil fresco.\n",
   CountIngredients:0,
-  filepath: "../../../assets/ImgRecipes/SpaguetiCarbonara.jpg",
-  webviewPath: "../../../assets/ImgRecipes/SpaguetiCarbonara.jpg"
-  },{
+  filepath: "../../../assets/ImgRecipes/SpaguetiCarbonara.png",
+  webviewPath: "../../../assets/ImgRecipes/SpaguetiCarbonara.png"
+  },{//PASTA
     id:"A:7",
     Name:"Espagueti con atún",
     Portions:"+5 Personas",
@@ -135,8 +153,8 @@ export class RecipesService {
     "4:Deje hervir durante cinco minutos a fuego lento.\n"+
     "5:Vierta sobre el espagueti escurrido.\n",
     CountIngredients:0,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/EspaguetiAtum.png",
+    webviewPath: "../../../assets/ImgRecipes/EspaguetiAtum.png"
   },{ //facil
     id:"A:8",
     Name:"Frijoles refritos",
@@ -151,8 +169,8 @@ export class RecipesService {
     "3:Refriéndolos hasta que sequen.\n"+
     "4:Ajustar la cantidad de sal si es necesario y sirva con totopos.\n",
     CountIngredients:0,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/FrijolesRefritos.png",
+    webviewPath: "../../../assets/ImgRecipes/FrijolesRefritos.png"
   },{//SALSA
     id:"A:9",
     Name:"Salsa roja",
@@ -167,7 +185,9 @@ export class RecipesService {
     Procedure:"1:Hidrata los chiles en agua caliente hasta que se ablanden.\n"+
     "2:Retira y lícualos un poco con el resto de los ingredientes.\n"+
     "3:Sazona en un poco de aceite caliente y sirve fria.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/SalsaRoja.png",
+    webviewPath: "../../../assets/ImgRecipes/SalsaRoja.png"
   },{//SALSA
     id:"A:10",
     Name:"Salsa verde",
@@ -183,7 +203,9 @@ export class RecipesService {
     "2:Cuando los tomates estén suaves, retira un poco del agua y licua con ella los ingredientes anteriores junto con el cilantro.\n"+
     "3:Sazona y vierte en una cacerola con aceite y añade sal.\n"+
     "4:Sirve fría\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/SalsaVerde.png",
+    webviewPath: "../../../assets/ImgRecipes/SalsaVerde.png"
   },{//FACIL
     id:"A:11",
     Name:"Guacamole",
@@ -193,8 +215,10 @@ export class RecipesService {
     "*Sal y pimienta al gusto\n",
     Procedure:"1:Corta por la mitad los aguacates y con una cuchara retirar la pulpa, machácala.\n"+
     "2:Agregar el jugo de limon, sal y la pimienta. Mezclar perfectamente\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
-  },{
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/Guacamole.png",
+    webviewPath: "../../../assets/ImgRecipes/Guacamole.png"
+  },{//ENSALADA
     id:"A:12",
     Name:"Nopales",
     Portions:"+5 Personas",
@@ -209,8 +233,10 @@ export class RecipesService {
     "2:Retira y escurre el exceso de liquido.\n"+
     "3:Frie con un poco más de aceite la cebolla, cuando esté transparente agrega el jitomate e integra.\n"+
     "4:Regresa los nopales al sartén, la sal y la pimienta. Retira del fuego y espolvorea el cilantro picado.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
-  },{//FACIL
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/Nopales.png",
+    webviewPath: "../../../assets/ImgRecipes/Nopales.png"
+  },{//FACIL ENSALADA
     id:"A:13",
     Name:"Ensalada de pepino y rábanos",
     Portions:"2 Personas",
@@ -220,7 +246,104 @@ export class RecipesService {
     "*Sal, al gusto\n",
     Procedure:"1:Intercala las rodajas de pepino y rábanos.\n"+
     "2:Baña con el limón y la sal.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/EnsaladaPepinoRabanos.png",
+    webviewPath: "../../../assets/ImgRecipes/EnsaladaPepinoRabanos.png"
+  },{//ENSALADA
+    id:"A:14",
+    Name:"Ensalada de pollo y lechuga",
+    Portions:"4 Personas",
+    Ingredients:"*500 gramos de pechuga de pollo\n"+
+    "*1  lechuga troceada\n"+
+    "*3 zanahorias\n"+
+    "*100 gramos de queso manchego\n"+
+    "*1/2 taza de granos de elote\n"+
+    "*Sal y pimienta\n"+
+    "*1 chile de árbol (OPCIONAL)\n"+
+    "*Aderezo al gusto\n",
+    Procedure:"1:En un sartén con poco aceite agregar el pollo en trozos pequeños o en tiritas. Sazonar con sal y pimienta al gusto. Si haci lo deseas agregar el chile de arbol.\n"+
+    "2:Cortar la zanahora en rebanadas pequeñas o utilizando un rallador rallar la zanahoria.\n"+
+    "3:Cortar el queso en cuadros pequeños y las uvas por la mitad, retirar las semillas de la uva.\n"+
+    "4:En un recipiente agregar la lechuga en trozos, la zanahoria, las uvas, el queso en cuadritos y los granos de elote.\n"+
+    "5:Agregar el pollo y añadir algun aderezo si lo deseas. \n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/EnsaladaPolloLechuga.png",
+    webviewPath: "../../../assets/ImgRecipes/EnsaladaPolloLechuga.png"
+  },{//ENSALADA
+    id:"A:15",
+    Name:"Ensalada de pollo",
+    Portions:"+5 Personas",
+    Ingredients:"*2 a 3 pechugas de pollo\n"+
+    "*2 papas grandes\n"+
+    "*3 zanahorias\n"+
+    "*Chicharos"+
+    "*6 cucharadas soperas de meyonesa\n"+
+    "*6 cucharadas de crema\n"+
+    "*Sal\n"+
+    "*1/2 de cebolla"+
+    "*1 diente de ajo",
+    Procedure:"1:En una olla con agua, agregar las pechugas de pollo, media cebolla, sal y un diente de ajo. Cocinar por unos 15 a 20 minutos.\n"+
+    "2:Mientras se cose la pechuga, cortar en cuadritos pequeños la zanahoria y la papa.\n"+
+    "3:Retirar las pechugas, dejar enfriar y desmenuzar.\n"+
+    "4:Para cocinar las verduras puedes utilizar otra olla con agua o si gustas puedes reutilizar la misma agua que se utilizo con el pollo, retirando la cebolla y el diente de ajo.\n"+
+    "5:Cuando la papa este suave, retirar del fuego y escurrir la verdura. Dejar enfriar la verdura.\n"+
+    "6:En un recipiente agregar la mayonesa, la crema, la verdura y el pollo desmenuzado. Mezclar bien.\n"+
+    "7:Si gustas puedes comer la ensalada con galletas saladas, tostadas o en un emparedado. \n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/EnsaladaPolloVerdura.png",
+    webviewPath: "../../../assets/ImgRecipes/EnsaladaPolloVerdura.png"
+  },{//SALSA FACIL
+    id:"A:16",
+    Name:"Salsa pico de gallo",
+    Portions:"4 Personas",
+    Ingredients:"*2 jitomates\n"+
+    "*1/2 cebolla\n"+
+    "*2 dientes de ajo\n"+
+    "*2 chiles serranos \n"+
+    "*1 ramas de cilantro\n"+
+    "*1 cucharada de vinagre blanco\n"+
+    "*1 cucharada de aceite de oliva\n"+
+    "*Sal\n",
+    Procedure:"1:Picar en pequeños cubos el jitomate, la cebolla, el chile, el ajo y el cilantro.\n"+
+    "2:En un recipiente agregar todos los ingredintes y mezclar bien los ingredientes.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/SalsaPicoGallo.png",
+    webviewPath: "../../../assets/ImgRecipes/SalsaPicoGallo.png"
+  },{//SALSA
+    id:"A:17",
+    Name:"Salsa roja con chile morita",
+    Portions:"+5 Personas",
+    Ingredients:"*8 tomates(Tomatillo)\n"+
+    "*1/2 cebolla\n"+
+    "*2 dientes de ajo\n"+
+    "*1 chile guajillo\n"+
+    "*3 chiles morita\n"+
+    "*Sal y pimienta\n"+
+    "*Pizca de oregano",
+    Procedure:"1:Freir los chiles, los tomates, la cebolla y el ajo.\n"+
+    "2:En la licuadora agregar todo lo freido, un poco de sal y pimienta.\n"+
+    "3:Si queda muy espeso agregar un poco de agua.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/SalsaRojaMorita.png",
+    webviewPath: "../../../assets/ImgRecipes/SalsaRojaMorita.png"
+  },{//ENSALADA PASTA
+    id:"A:18",
+    Name:"Ensalada de pasta con calabacín, atún y limón",
+    Portions:"4 Personas",
+    Ingredients:"*Un paquete de pasta, de la forma de tuy preferencia\n"+
+    "*2 latas de atún en aceite\n"+
+    "*Ralladura de la cáscara de 1 limon\n"+
+    "*Aceite de oliva virgen\n"+
+    "*Sal y pimienta\n"+
+    "2 calabacines",
+    Procedure:"1:En una olla con agua y sal, agregamos la pasta y dejamos al fuego por 10 minutos.\n"+
+    "2:Cortamos las calabacines en tiras finas.\n"+
+    "3:En un sarten calentamos un poco de aceite de oliva y doramos las rebanadas de calabacín en ambos lados\n"+
+    "4:En un traste o cacerola agregamos la pasta, el atúm, la ralladura de limón, un poco de aceite de oliva, sal y pimienta.\n"+
+    "5:Mezclamos bien y servimos\n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/EnsaladaPastaCalabacin.png",
+    webviewPath: "../../../assets/ImgRecipes/EnsaladaPastaCalabacin.png"
   }]
 
   mel=[{//FACIL
@@ -251,8 +374,8 @@ export class RecipesService {
     "5:Se espera a que hierva\n"+
     "6:Ya que hierva se le apaga y se le agrega el queso y un poco de sal\n",
     CountIngredients:9,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/Morisqueta.png",
+    webviewPath: "../../../assets/ImgRecipes/Morisqueta.png"
   },{//FACIL
     id:"M:2",
     Name:"Alambres",
@@ -269,8 +392,8 @@ export class RecipesService {
     "5:Se distribuye el queso en toda la carne y se tapa  \n"+
     "6:Se espera a que el queso se derrita",
     CountIngredients:5,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/Alambres.png",
+    webviewPath: "../../../assets/ImgRecipes/Alambres.png"
   },{//FACIL
     id:"M:3",
     Name:"CHILAQUIILES",
@@ -289,8 +412,8 @@ export class RecipesService {
     "5:Se tapa y se mueve constantemente para que no se pegen los totopos \n"+
     "6:Se espera a que seque (al gusto)",
     CountIngredients:7,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/Chilaquiles.png",
+    webviewPath: "../../../assets/ImgRecipes/Chilaquiles.png"
   },{
     id:"M:4",
     Name:"POLLO EN CHIPOTLE",
@@ -309,8 +432,8 @@ export class RecipesService {
     "4:Al pollo se le agrega lo molido\n"+
     "5:Se revuelve y se tapa, se tiene que mover constantemente hasta que el pollo este cocido\n",
     CountIngredients:8,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/PolloChipotle.png",
+    webviewPath: "../../../assets/ImgRecipes/PolloChipotle.png"
   },{//FACIL
     id:"M:5",
     Name:"CROQUETAS DE ATUM",
@@ -326,8 +449,8 @@ export class RecipesService {
     "5:En una traste se vierte el huevo y se remoja la bolita de papa\n"+
     "6:La bolita de papa se empaniza con el pan molido y se frie\n",
     CountIngredients:4,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/CroquetasAtum.png",
+    webviewPath: "../../../assets/ImgRecipes/CroquetasAtum.png"
   },{
     id:"M:6",
     Name:"CHICHARRON EN SALSA ROJA",
@@ -347,8 +470,8 @@ export class RecipesService {
     "5:Se le echa lo molido al chicharron\n"+
     "6:Se le echa agua al gusto, el chicharron absorbe algo de agua\n",
     CountIngredients:4,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/ChicharronSalsa.png",
+    webviewPath: "../../../assets/ImgRecipes/ChicharronSalsa.png"
   },{
     id:"M:7",
     Name:"Langostinos en mantequilla",
@@ -371,8 +494,8 @@ export class RecipesService {
     "6:Freir hasta y revolver hasta que los langostinos o camarones se vuelvan rosados, firmes y opacos, 1 a 2 minutos por cada lado. No refreir.\n"+
     "7:Antes de servirlos, agregar el perejil picado y condimentar con sal y pimienta. Adornar con las rodajas y el perejil si se quiere.\n",
     CountIngredients:9,
-    filepath: "../../../assets/ImgRecipes/LagartinosMantequilla.jpg",
-    webviewPath: "../../../assets/ImgRecipes/LagartinosMantequilla.jpg"
+    filepath: "../../../assets/ImgRecipes/LagartinosMantequilla.png",
+    webviewPath: "../../../assets/ImgRecipes/LagartinosMantequilla.png"
   },{
     id:"M:8",
     Name:"Milanesas Cordon Blue",
@@ -390,8 +513,8 @@ export class RecipesService {
     "3:Empanizar las milanesas y frielas en suficiente aceite y déjarlas escurrir.\n"+
     "4:Sirvelas con arroz y verduras.\n",
     CountIngredients:5,
-    filepath: "../../../assets/ImgRecipes/MilanesaCordon.jpg",
-    webviewPath: "../../../assets/ImgRecipes/MilanesaCordon.jpg"
+    filepath: "../../../assets/ImgRecipes/MilanesaCordon.png",
+    webviewPath: "../../../assets/ImgRecipes/MilanesaCordon.png"
   },{//FACIL
     id:"M:9",
     Name:"Ejotes con huevo",
@@ -406,8 +529,8 @@ export class RecipesService {
     "3:Agregue los ejotes y vierta el huevo.\n"+
     "4:Cocine a fuego bajo hasta que el huevo se seque.\n",
     CountIngredients:0,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/icon/HuevoEjotes.png",
+    webviewPath: "../../../assets/icon/HuevoEjotes.png"
   },{//FACIL
     id:"M:10",
     Name:"Papas con longaniza o chorizo",
@@ -421,8 +544,8 @@ export class RecipesService {
     "3:Agregue las papas y agrege sal al gusto.\n"+
     "4:Deje dorar ligeramente.\n",
     CountIngredients:0,
-    filepath: "../../../assets/ImgRecipes/PapasLonganiza.jpg",
-    webviewPath: "../../../assets/ImgRecipes/PapasLonganiza.jpg"
+    filepath: "../../../assets/ImgRecipes/PapasLonganiza.png",
+    webviewPath: "../../../assets/ImgRecipes/PapasLonganiza.png"
   },{
     id:"M:11",
     Name:"Pollo al vino",
@@ -448,8 +571,8 @@ export class RecipesService {
     "7:Procure que las piezas queden bien cubiertas con la salsa.\n"+
     "8:Tape y cocine a durante 10 minutos o hasta que el pollo este tierno.\n",
     CountIngredients:0,
-    filepath: "../../../assets/ImgRecipes/PolloVino.jpg",
-    webviewPath: "../../../assets/ImgRecipes/PolloVino.jpg"
+    filepath: "../../../assets/ImgRecipes/PolloVino.png",
+    webviewPath: "../../../assets/ImgRecipes/PolloVino.png"
   },{//MICROONDAS
     id:"M:12",
     Name:"Albondigon",
@@ -473,7 +596,73 @@ export class RecipesService {
     "5:Rote el molde  y cocínelo dutante 5 minutos más.\n"+
     "6:Destápelo y cocínelo durante 8 minutos.\n"+
     "7:Deje reposar 5 minutos y sírvalo.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/Albondigon.png",
+    webviewPath: "../../../assets/ImgRecipes/Albondigon.png"
+  },{//Horno
+    id:"M:13",
+    Name:"Papas rojas gratinadas",
+    Portions:"+5 Personas",
+    Ingredients:"*5 Papas\n"+
+    "*20 gramos de harina\n"+
+    "*60 gramos de mantequilla o margarina\n"+
+    "*Sal\n"+
+    "*Pimienta\n"+
+    "*Paprika\n"+
+    "*300 ml de leche\n"+
+    "*Un ramito de tomillo para adornar\n",
+    Procedure:"1:Precalentar el horno a 180°C. Lavar bien las papas y cortar en rebanadas de 6 mm con un cuchillo. \n"+
+    "2:Colocar las rebanadas sobre papel de cera y espolvorear con harina. Revolver suavemente para cubrirlas.\n"+
+    "3:Untar con una cucharada de mantequilla en un molde redondo de aproximadamente de 22 cm.\n"+
+    "4:Con 1/3 de las papas crear una capa en el molde espolvoreando sal, pimienta y prapika al gusto. Salpicar con 1 cucharada de mantequilla.\n"+
+    "5:Hacer otras 2 capas iguales.\n"+
+    "6:Calentar la leche en una olla a fuego medio hasta que este caliente pero sin que llegue a hervir.\n"+
+    "7:Vertir sobre las papas. Espolvoreando sal, pimienta y prapika al gusto. Cubrir con una tapa o con papel aluminio.\n"+
+    "8:Hornear 35 minutos. Destapar y hornear 20 minutos más o hasta que las papas estén tiernas y no demasiado hechas.\n"+
+    "9:Adornar con el ramito de tomillo si se quiere. Servir\n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/PapasGratinadas.png",
+    webviewPath: "../../../assets/ImgRecipes/PapasGratinadas.png"
+  },{//FACIL
+    id:"M:14",
+    Name:"Papas suizas",
+    Portions:"4 Personas",
+    Ingredients:"*4 Papas grandes\n"+
+    "*60 gramos de mantequilla o margarina\n"+
+    "*Sal y pimienta\n"+
+    "*Trozos de jitomates y ramitos de romero para adornar (OPCIONAL)\n",
+    Procedure:"1:Lavar muy bien las papas. En una olla con agua a fuego alto agregar las papas y cocer hasta que las papas esten suaves. Atravezar las papas con un cuchillo o con tenedor para comprobar que en el interior este blando.\n"+
+    "2:Dejar que se enfrien y pelar las papas. Utilizando un rallador rallar las papas.\n"+
+    "3:Calentar la mantequilla en un sartén a fuego medio hasta que se derrita.\n"+
+    "4:Extender la papa rallada uniformemente en el salten (No revolver ni dar vuelta) Agregar sal y pimienta al gusto. Cocinar 10 a 12 minutos hasta que se dore.\n"+
+    "5:Apagar el fuego. Con un recipiento o un plato invertir la cara de la papa sobre el sarten. Dejar dorar y servir.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/PapasSuizas.png",
+    webviewPath: "../../../assets/ImgRecipes/PapasSuizas.png"
+  },{//Microondas || FACIL
+    id:"M:15",
+    Name:"Patatas gajo",
+    Portions:"3 Personas",
+    Ingredients:"*500 gramos de papas\n"+
+    "*1 cucharada de ajo en polvo\n"+
+    "*1 cucharada de cebolla en polvo\n"+
+    "*1 cucharada de hierbas provenzales (Hierbas finas)\n"+
+    "*1 cucharada de paprika\n"+
+    "*1 pizca de pimienta negra recién molida\n"+
+    "*1 chorro de aceite de oliva\n"+
+    "*1 pizca de sal\n",
+    Procedure:"1:Pelar las papas con un pelador de verduras.\n"+
+    "2:Con un cuchillo de cocina cortar cada papa a la mitad y cada mitad partirla por la mitad.\n"+
+    "Si tienes papas muy grandes, seguir cortando por la mitad hasta que obtengas el tamaño mas pequeño o un tamaño deseado.\n"+
+    "3:En un recipiente  añadir las papas y mezclar con las hierbas, el ajo en polvo, la cebolla en polvo, la paprika, una pizca de pimienta.\n"+
+    "4:Poner las papas ya mezcladas con las especias en un recipiente para microondas y añadir un chorrito pequeño de aceite de oliva y mezclar\n"+
+    "5:Tapar el recipiente con un papel film transparente y poner a calentar en el microondas por 5 minutos\n"+
+    "6:Al terminar los 5 minutos, retirar con mucho cuidado el papel procurando de no qumarse con el vapor que salga, ya que estara muy caliente.\n"+
+    "7:Revolver con una cuchara las papas y volver a cubrir con  el papel film. volver a cocinar por 5 minutos o hasta que las papas este suaves.\n"+
+    "8:Retirar con mucho cuidado el papel y añadir un poco de sal, al gusto.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/PapasGajo.png",
+    webviewPath: "../../../assets/ImgRecipes/PapasGajo.png"
   }]
 
   beverege=[{
@@ -493,8 +682,8 @@ export class RecipesService {
     "6:Añadir el licor de cafe\n"+
     "7:Verter en las tazas y colocar la crema batida encima y adornar con las raspaduras de chocolate\n",
     CountIngredients:5,
-    filepath: "../../../assets/ImgRecipes/CafeVienesa.jpg",
-    webviewPath: "../../../assets/ImgRecipes/CafeVienesa.jpg"
+    filepath: "../../../assets/ImgRecipes/CafeVienesa.png",
+    webviewPath: "../../../assets/ImgRecipes/CafeVienesa.png"
   },{
     id:"B:2",
     Name:"Jugo de mandarina y Jengibre",
@@ -506,8 +695,8 @@ export class RecipesService {
     "2:En la licuadora añadir todos los ingredientes.\n"+
     "*El jugo de mandarina es un buen protector para la salud\n",
     CountIngredients:0,
-    filepath: "../../../assets/ImgRecipes/JugoMandarina.jpg",
-    webviewPath: "../../../assets/ImgRecipes/JugoMandarina.jpg"
+    filepath: "../../../assets/ImgRecipes/JugoMandarina.png",
+    webviewPath: "../../../assets/ImgRecipes/JugoMandarina.png"
   },{//FACIL 
     id:"B:3",
   Name:"Jugo Con Vitamina C",
@@ -520,8 +709,8 @@ export class RecipesService {
   "2:Agregar todos los ingredientes al vaso de la licuadora hasta que tenga una preparación homogénea.\n"+
   "*Un impulso para el sistema inmunitario corporal rico en vitamina C.\n",
   CountIngredients:0,
-  filepath: "../../../assets/ImgRecipes/JugoVitaminaC.jpg",
-  webviewPath: "../../../assets/ImgRecipes/JugoVitaminaC.jpg"
+  filepath: "../../../assets/ImgRecipes/JugoVitaminaC.png",
+  webviewPath: "../../../assets/ImgRecipes/JugoVitaminaC.png"
   },{
     id:"B:4",
     Name:"Licuado de Fresa-Kiwi",
@@ -531,8 +720,8 @@ export class RecipesService {
     "*1 taza de leche soya o agua\n",
     Procedure:"1:Licuar todos los ingredientes y disfrutar.\n",
     CountIngredients:0,
-    filepath: "../../../assets/ImgRecipes/LicuadoFresaKiwi.jpg",
-    webviewPath: "../../../assets/ImgRecipes/LicuadoFresaKiwi.jpg"
+    filepath: "../../../assets/ImgRecipes/LicuadoFresaKiwi.png",
+    webviewPath: "../../../assets/ImgRecipes/LicuadoFresaKiwi.png"
   },{//FACIL
     id:"B:5",
     Name:"Jugo de fresa y naranja",
@@ -541,8 +730,8 @@ export class RecipesService {
     "*1 litro de jugo de naranja\n",
     Procedure:"1:Licue las fresas con el jugo de naranja.\n",
     CountIngredients:0,
-    filepath: "../../../assets/icon/IconMenu.png",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    filepath: "../../../assets/ImgRecipes/JugoFresaNaranja.png",
+    webviewPath: "../../../assets/ImgRecipes/JugoFresaNaranja.png"
   },{//FACIL
     id:"B:6",
     Name:"Batido de fresa",
@@ -553,8 +742,10 @@ export class RecipesService {
     Procedure:"1:Lavar muy bien las fresas, cortar las hojas y retirar el tallo.\n"+
     "2:Agregar la fresa a la licuadora, añadir el azucar y la leche.\n"+
     "3:Batir hasta que quede completamente liquida.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
-  },{// FRIO
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/BatidoFresa.png",
+    webviewPath: "../../../assets/ImgRecipes/BatidoFresa.png"
+  },{//FACIL FRIO
     id:"B:7",
     Name:"Granizado de sandía",
     Portions:"2 Personas",
@@ -567,7 +758,9 @@ export class RecipesService {
     "2:Dejar reposar la sandia en el refrigerador hasta que este congelada. \n"+
     "3:Cuando la sandia se encuentre congelada, agregarla en la licuadora la sandia, el hielo, el jugo de limón y el azúcar, hasta tener una textura granizado.\n"+
     "4:Servirlo en un vaso y decorar con las hojas de menta.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/GranizadoSandia.png",
+    webviewPath: "../../../assets/ImgRecipes/GranizadoSandia.png"
   },{//FRIO
     id:"B:8",
     Name:"Batido de moras y durazno",
@@ -580,7 +773,9 @@ export class RecipesService {
     Procedure:"1:lavar muy bien la fruta.\n"+
     "2:En la licuadora mezclar las moras y el durazno, colar si no se quiere sentir las semillas.\n"+
     "3:Batir la mezcla de las frutas con el agua y el hielo. Servir en un vaso\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/BatidoMoraDurazno.png",
+    webviewPath: "../../../assets/ImgRecipes/BatidoMoraDurazno.png"
   },{
     id:"B:9",
     Name:"Jugo de jitomate y apio",
@@ -589,7 +784,9 @@ export class RecipesService {
     "*2 apios\n",
     Procedure:"1:Lavar perfectamente los ingredientes.\n"+
     "2:icuar los ingredientes sin las hojas del apio.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/BatidoJitomateApio.png",
+    webviewPath: "../../../assets/ImgRecipes/BatidoJitomateApio.png"
   },{//FACIL
     id:"B:10",
     Name:"Jugo de jitomate",
@@ -600,7 +797,9 @@ export class RecipesService {
     Procedure:"1:Lavar muy bien lo jitomates y cortarlos en cuatro partes.\n"+
     "2:Licuar con un poco de agua. Se podria agregar un poco mas, dependiendo de la consistencia que se desea obtener.\n"+
     "3:Añadir el jugo de limon para darle sabor.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/CafeVienesa.png",
+    webviewPath: "../../../assets/ImgRecipes/CafeVienesa.png"
   },{//CALIENTE
     id:"B:11",
     Name:"Atole de Mazapán",
@@ -617,7 +816,9 @@ export class RecipesService {
     "3:Colocar la mezcla en una olla y calienta a fuego medio.\n"+
     "4:Agrega la canela y cocina hasta que espese.\n"+
     "5:Servir el atole\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/CafeVienesa.png",
+    webviewPath: "../../../assets/ImgRecipes/CafeVienesa.png"
   },{//CALIENTE
     id:"B:12",
     Name:"Atole de Oreo",
@@ -633,8 +834,10 @@ export class RecipesService {
     "4:En una olla agregar la fécula y la mezcla de las galletas.\n"+
     "5:Calienta el atole moviendo constantemente para evitar que se pegue en el fondo.\n"+
     "6:Servir.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
-  },{
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/CafeVienesa.png",
+    webviewPath: "../../../assets/ImgRecipes/CafeVienesa.png"
+  },{//CALIENTE
     id:"B:13",
     Name:"Té de canela",
     Portions:"+5 Personas",
@@ -645,13 +848,15 @@ export class RecipesService {
     "2:Cuando el agua este apunto de hervir agregar los 3 rollitos de canela y dejar por 4 minutos. \n"+
     "3:Dejar reposar por 5 minutos.\n"+
     "4:Servir y agregar el azucar si lo deseas.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/CafeVienesa.png",
+    webviewPath: "../../../assets/ImgRecipes/CafeVienesa.png"
   },{//CALIENTE
     id:"B:14",
     Name:"Blackberry Hot Chocolate",
     Portions:"2 Personas",
     Ingredients:"*16 moras\n"+
-    "*3 cucharadas de azucar\n"+
+    "*2 cucharadas de azucar\n"+
     "*1/2 cucharada de vainilla\n"+
     "*3 tazas de leche\n"+
     "*1 barra Chocolate amargo\n"+
@@ -660,12 +865,30 @@ export class RecipesService {
     "*Malvadisco (OPCIONAL)\n",
     Procedure:"1:Para preparar el coulis de moras, en un sarten cocine las moras, la azucar y las 2 cucharadas de agua en fuego moderado, hasta que las moras esten blandas.\n"+
     "2:En un recipiente empuje y machacar el contenido del sarten a traves de un colador o si lo prefieres puedes utilizar la licuadora y depositar el contenido utilizando un colador. Desechar lo que quede en el colador.\n"+
-    "3:Caliente la leche hasya que esté hirviendo. Mientras se calienta la leche pica el chocolate y colocalosen la licuadora.\n"+
+    "3:Caliente la leche hasya que esté hirviendo. Mientras se calienta la leche pica el chocolate y colocalos en la licuadora.\n"+
     "4:En la licuadora con el chocolate agrege la vainilla y la leche.\n"+
     "5:Si al finalizar deseas adornar con crema batida reserva 1 cucharada del coulis de mora y vierta el resto en la licuadora. Si no deseas adornar vierta todo el coulis de mora.\n"+
     "6:mezcla hasta que el chocolate se derrita y la bebida este espumosa.\n"+
     "7:Vierta en tazas y adornar , si lo deseas, con crema batida, malvavisco, una cucharada del coulis y 1 mora por taza.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/CafeVienesa.png",
+    webviewPath: "../../../assets/ImgRecipes/CafeVienesa.png"
+  },{//CALIENTE FACIL
+    id:"B:15",
+    Name:"Chocolate caliente rosa",
+    Portions:"2 Personas",
+    Ingredients:"*2 tazas de leche\n"+
+    "*1/2 cucharada de vainilla\n"+
+    "*1/2 barra de chocolate blanco\n"+
+    "*3 a 5 gotas, dependiendo de la tonalidad deseada, de colorante rosa\n"+
+    "*Crema batida (OPCIONAL)\n"+
+    "*Chispas de chocolates de colores(OPCIONAL)\n",
+    Procedure:"1:En una cacerola pequeña, hervir la leche a fuego lento.\n"+
+    "2:Agregar la vainilla y el chocolate. Mezclar por aproximadamente 1 minuto hasta que el chocolate se derrita por completo.\n"+
+    "3:En un vaso agregar la leche ya con el chocolate derretido. Agregar la crema batida y adornar con las chispas de chocolate,\n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/CafeVienesa.png",
+    webviewPath: "../../../assets/ImgRecipes/CafeVienesa.png"
   }]
 
   
@@ -690,8 +913,8 @@ export class RecipesService {
   "9:Retirar del baño María y dejar enfriar para que las puedas refrigerar\n"+
   "10:Una vez frio desmoldar y servir\n",
   CountIngredients:6,
-  filepath: "../../../assets/ImgRecipes/FlanChocolate.jpg",
-  webviewPath: "../../../assets/ImgRecipes/FlanChocolate.jpg"
+  filepath: "../../../assets/ImgRecipes/FlanChocolate.png",
+  webviewPath: "../../../assets/ImgRecipes/FlanChocolate.png"
   },{//FRIO
     id:"D:2",
   Name:"Sándwiches de helado tradicionales",
@@ -718,8 +941,8 @@ export class RecipesService {
   "11:A la mitad de las galletas, extender el helado sobre el lado plano y colocar la otra mitad de las galletas enfrente.\n"+
   "12:Servir inmeditamnete o envolver en una hoja plastica y congelar por un máximo de 1 mes.\n",
   CountIngredients:9,
-  filepath: "../../../assets/ImgRecipes/SandwichesHelado.jpg",
-  webviewPath: "../../../assets/ImgRecipes/SandwichesHelado.jpg"
+  filepath: "../../../assets/ImgRecipes/SandwichesHelado.png",
+  webviewPath: "../../../assets/ImgRecipes/SandwichesHelado.png"
   },{
     id:"D:3",
   Name:"Arroz con leche y chocolate",
@@ -750,7 +973,7 @@ export class RecipesService {
   CountIngredients:11,
   filepath: "../../../assets/icon/IconMenu.png",
   webviewPath: "../../../assets/icon/IconMenu.png"
-  },{//HORNO
+  },{
     id:"D:4",
     Name:"Brownis de naranja a lo capuchino",
     Portions:"+5 Personas",
@@ -792,8 +1015,8 @@ export class RecipesService {
   "4:Vierte el contenido en copas o el recipiente que usaras. Refrigerar durante 1 hora.\n"+
   "5:Puedes decorar con varias rebanadas de duraznos y con las cerezas\n",
   CountIngredients:0,
-  filepath: "../../../assets/ImgRecipes/DulceDurazno.jpg",
-  webviewPath: "../../../assets/ImgRecipes/DulceDurazno.jpg"
+  filepath: "../../../assets/ImgRecipes/DulceDurazno.png",
+  webviewPath: "../../../assets/ImgRecipes/DulceDurazno.png"
   },{//FACIL
     id:"D:6",
   Name:"Taquitos de jícama",
@@ -808,8 +1031,8 @@ export class RecipesService {
   "3:Para preparar los taquitos, enrollar las tiras de pepino, mango y jícama con las rebanas de jícamas.\n"+
   "4:Colocalos muy juntos en un plato, rociar con el jugo de limón y el chile al gusto.\n",
   CountIngredients:0,
-  filepath: "../../../assets/ImgRecipes/TacosJicama.jpg",
-  webviewPath: "../../../assets/ImgRecipes/TacosJicama.jpg"
+  filepath: "../../../assets/ImgRecipes/TacosJicama.png",
+  webviewPath: "../../../assets/ImgRecipes/TacosJicama.png"
   },{
     id:"D:7",
   Name:"Postre de Naranja",
@@ -827,8 +1050,8 @@ export class RecipesService {
   "6:Con movimiento suaves mezclar las claras a la mezcla de naranja.\n"+
   "7:Vierte la preparación en copas y refrigere durante 2 horas.\n",
   CountIngredients:0,
-  filepath: "../../../assets/ImgRecipes/PostreNaranja.jpg",
-  webviewPath: "../../../assets/ImgRecipes/PostreNaranja.jpg"
+  filepath: "../../../assets/ImgRecipes/PostreNaranja.png",
+  webviewPath: "../../../assets/ImgRecipes/PostreNaranja.png"
   },{//HORNO
     id:"D:8",
   Name:"Tarta de frambuesas",
@@ -857,9 +1080,9 @@ export class RecipesService {
   "13:Si lo deseas, decorar con azúcar glass espolvoreada.\n"+
   "*\n",
   CountIngredients:0,
-  filepath: "../../../assets/ImgRecipes/TartaFrambuesas.jpg",
-  webviewPath: "../../../assets/ImgRecipes/TartaFrambuesas.jpg"
-  },{//MICROONDAS
+  filepath: "../../../assets/ImgRecipes/TartaFrambuesas.png",
+  webviewPath: "../../../assets/ImgRecipes/TartaFrambuesas.png"
+  },{//MICROONDAS FACIL
     id:"D:9",
     Name:"Esquites",
     Portions:"+5 personas",
@@ -874,6 +1097,8 @@ export class RecipesService {
     "3:añadir los elotes y tape el recipiente. Cocinar durante 6 minutos, revolviendo a mitad de cocción.\n"+
     "4:Añadir el epazote, destape y cocine durante otros 3 minutos o hasta que el elote esté cocido.\n"+
     "5:Añadir sal al gusto.\n",
+    CountIngredients:0,
+    filepath: "../../../assets/ImgRecipes/JugoVitaminaC.jpg",
     webviewPath: "../../../assets/icon/IconMenu.png"
   },{//MICROONDAS
     id:"D:10",
@@ -890,29 +1115,9 @@ export class RecipesService {
   "3:Poner la mezcla en el recipiente para microondas y calentarlo por 15 minutos o hasta que este cuajado en el centro, picar con un calillo y si esta liquido poner por 5 minutos más o el tiempo que haga falta hasta que ya no este liquido.\n"+
   "4:Dejar enfriar completamente antes de llevarlo al refrigerador. \n"+
   "5:Dejar reposar por un minimo de 4 horas.\n",
+  CountIngredients:0,
+  filepath: "../../../assets/ImgRecipes/JugoVitaminaC.jpg",
   webviewPath: "../../../assets/icon/IconMenu.png"
-  },{//Microondas || FACIL
-    id:"D:11",
-    Name:"Patatas gajo",
-    Portions:"3 Personas",
-    Ingredients:"*500 gramos de papas\n"+
-    "*1 cucharada de ajo en polvo\n"+
-    "*1 cucharada de cebolla en polvo\n"+
-    "*1 cucharada de hierbas provenzales (Hierbas finas)\n"+
-    "*1 cucharada de paprika\n"+
-    "*1 pizca de pimienta negra recién molida\n"+
-    "*1 chorro de aceite de oliva\n"+
-    "*1 pizca de sal\n",
-    Procedure:"1:Pelar las papas con un pelador de verduras.\n"+
-    "2:Con un cuchillo de cocina cortar cada papa a la mitad y cada mitad partirla por la mitad.\n"+
-    "Si tienes papas muy grandes, seguir cortando por la mitad hasta que obtengas el tamaño mas pequeño o un tamaño deseado.\n"+
-    "3:En un recipiente  añadir las papas y mezclar con las hierbas, el ajo en polvo, la cebolla en polvo, la paprika, una pizca de pimienta.\n"+
-    "4:Poner las papas ya mezcladas con las especias en un recipiente para microondas y añadir un chorrito pequeño de aceite de oliva y mezclar\n"+
-    "5:Tapar el recipiente con un papel film transparente y poner a calentar en el microondas por 5 minutos\n"+
-    "6:Al terminar los 5 minutos, retirar con mucho cuidado el papel procurando de no qumarse con el vapor que salga, ya que estara muy caliente.\n"+
-    "7:Revolver con una cuchara las papas y volver a cubrir con  el papel film. volver a cocinar por 5 minutos o hasta que las papas este suaves.\n"+
-    "8:Retirar con mucho cuidado el papel y añadir un poco de sal, al gusto.\n",
-    webviewPath: "../../../assets/icon/IconMenu.png"
   }]
 
   AlcoholicDrink=[{

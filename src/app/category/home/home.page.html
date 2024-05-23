@@ -10,22 +10,22 @@
 
     </div>
     <div class="BlockRecomendation">
-      <div class="types1 margintypes">
+      <div id="types1" class="types1 margintypes">
         <h3>{{CategoryOne}}</h3>
         <div class="backgroundTittler"></div>
         
       </div>
-      <div class="types2 margintypes">
+      <div id="types2" class="types2 margintypes">
         <h3>Sencillo</h3>
         <div class="backgroundTittler"></div>
       </div>
-      <div class="types3 margintypes">
+      <div id="types3" class="types3 margintypes">
         <h3>{{CategoryTwo}}</h3>
         <div class="backgroundTittler"></div>
       </div>
     </div>
     <div class="CardContent">
-      <div class="carouselItem">
+      <div id="DivContentCard" class="carouselItem">
         <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectArray">
           <div (click)="SeeCard(i.id)" class="card">
             <div>
@@ -37,9 +37,10 @@
             </div>
           </div>
         </div>
-        <div class="MarginButton">
-          <ion-button id="ButtonMostrarMas">Mostrar mas</ion-button>
-        </div>
+      </div>
+      <div class="MarginButton">
+        <ion-button id="ButtonMostrarMas">Siguiente</ion-button>
+        <ion-button id="ButtonMostrarMenos">Anterior</ion-button>
       </div>
     </div>
   </div>
