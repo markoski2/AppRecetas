@@ -30,13 +30,6 @@ export class CreateInformationPage implements OnInit {
   ngOnInit() {
 
     this.getdate()
-  
-    document.getElementById("cosa")?.addEventListener("click",()=>{
-      if((document.getElementById("cosa") as HTMLIonInputElement).value==""){
-        this.createInputIngredients()
-
-      }
-    })
 
     document.getElementById("Add")?.addEventListener("click",()=>{
       this.ExtractInformationIngredients()
@@ -59,10 +52,6 @@ export class CreateInformationPage implements OnInit {
       }
     })
 
-    document.getElementById("InputPortions")?.addEventListener("change",()=>{
-      console.log()
-      
-    })
 
     document.getElementById("TakePhoto")?.addEventListener("click",()=>{
       this.TakePhoto()
@@ -100,7 +89,7 @@ export class CreateInformationPage implements OnInit {
     document.querySelectorAll(".IdIngredients").forEach(Element=>{
       if((Element as HTMLInputElement).value){
         this.dates.CountIngredients++
-        this.dates.Ingredients+="\n"+(Element as HTMLInputElement).value
+        this.dates.Ingredients+="\n\n"+(Element as HTMLInputElement).value
       }
       
     })
@@ -130,19 +119,15 @@ export class CreateInformationPage implements OnInit {
     var label1=document.createElement("label")
     label1.textContent="*"
     var input=document.createElement("input")
-    input.style.width="300px"
+    input.style.width="250px"
     input.style.margin="10px  10px 0 10px"
     input.style.fontSize="15px"
     input.style.padding="6px"
     input.className="IdIngredients"
-    input.addEventListener("click",()=>{
-      if((input as HTMLInputElement)?.value==""){
-        this.NumberId++
-        this.createInputIngredients()
-      }
-    })
     var label2=document.createElement("label")
     label2.textContent="X"
+    label2.style.color="red"
+    label2.style.fontSize="25px"
     label2.addEventListener("click",()=>{
       Div.remove()
     })

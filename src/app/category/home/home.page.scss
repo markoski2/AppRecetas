@@ -1,0 +1,113 @@
+//header
+.DivHeaderPart1{
+    display: flex;
+    margin:0 10px;
+    align-items: center;
+}
+h1{
+    margin-left: 15px;
+}
+.ImgHeader{
+    width: 50px;
+    height: 40px;
+}
+.header{
+    background: #F97328;
+    margin: 0;
+}
+.CardContent{
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+// Card
+.carouselItem {
+    width: 100%;
+  }
+  
+  ::ng-deep .CardImg {
+    width: 100px;
+    margin: 10px;
+    border: 3px solid black
+  }
+  
+  ::ng-deep .card {
+    width: 100%;
+    display: inline-flex;
+    border: 2px solid #D8D8D8;
+    background-color: #01EA96; //1CC2E7
+    margin-top: 10px;
+  }
+  
+  ::ng-deep.CardMain {
+    width: 350px;
+    padding-left: 20px;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: center;
+  }
+  .MarginButton{
+    display: flex;
+    justify-content: space-evenly;
+    margin:10px 0px;
+  }
+  #ButtonMostrarMenos{
+    display: none;
+  }
+  
+//block category}
+.BlockRecomendation{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background: white;
+}
+.backgroundTittler{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,rgb(255, 255, 255,0) , #6B6B6B 85%);
+}
+.types1{
+    width: 300px;
+    height: 100px;
+    background-image: url("./../../../assets/icon/microondas.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.types2{
+    width: 150px;
+    height: 100px;
+    background-image: url("./../../../assets/icon/Facil.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.types3{
+    width: 150px;
+    height: 100px;
+    background-image: url("./../../../assets/icon/Horno.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.margintypes{
+    margin:15px 0;
+    border-radius: 20px;
+}
+h3{
+    color: white;
+    position: absolute;
+    height: 0;
+    margin: 10px;
+}
+
+@media (prefers-color-scheme: dark){
+  .BlockRecomendation{
+    background: #121212;
+  }
+
+}

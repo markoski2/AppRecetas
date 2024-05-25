@@ -14,12 +14,13 @@ export class CategoryPage implements OnInit {
   constructor(private router:Router,private recipes:RecipesService,private bd:PhotoService) { }
   ObjectMyRecipes:InformationCard[]=[]
   ObjectHome:InformationCard[]=[]
-  ObjectGarnish:InformationCard[]=[]
+  ObjectAccompaniments:InformationCard[]=[]
   ObjectMel:InformationCard[]=[]
   ObjectDessert:InformationCard[]=[]
   ObjectDrink:InformationCard[]=[]
   ObjectAlcoholicDrinks:InformationCard[]=[]
   NumberArray:number=0
+  NumbersRandoms?:any[5]
 
   ngOnInit() {
     this.OptionStar()
@@ -34,27 +35,49 @@ export class CategoryPage implements OnInit {
       var Content=document.getElementById("DivCarousel")
       Content!.style.transform = "translateX(-16.6%)";
     })
-    document.getElementById("Sopa")?.addEventListener("click",()=>{
+
+    document.getElementById("Sopa")?.addEventListener("click",()=>{//ACCOMPANIMENTS
       var Content=document.getElementById("DivCarousel")
-      this.ObjectGarnish=this.recipes.Garnish
+      if(this.ObjectAccompaniments.length==0){
+      this.NumbersRandoms=this.CardsRandom(this.recipes.Accompaniments)
+        for(let i=0;i<5;i++){
+          this.ObjectAccompaniments.push(this.recipes.Accompaniments[this.NumbersRandoms[i]])
+        }
+      }
       Content!.style.transform = "translateX(-33.32%)";
     })
+
     document.getElementById("Comida")?.addEventListener("click",()=>{
       var Content=document.getElementById("DivCarousel")
-      this.ObjectMel=this.recipes.mel
+      if(this.ObjectMel.length==0){
+        this.NumbersRandoms=this.CardsRandom(this.recipes.mel)
+        for(let i=0;i<5;i++){
+          this.ObjectMel.push(this.recipes.mel[this.NumbersRandoms[i]])
+        }
+      }
       Content!.style.transform = "translateX(-50%)";
     })
     document.getElementById("Postre")?.addEventListener("click",()=>{
       var Content=document.getElementById("DivCarousel")
-      this.ObjectDessert=this.recipes.Dessert
+      if(this.ObjectDessert.length==0){
+        this.NumbersRandoms=this.CardsRandom(this.recipes.Dessert)
+        for(let i=0;i<5;i++){
+          this.ObjectDessert.push(this.recipes.Dessert[this.NumbersRandoms[i]])
+        }
+      }
       Content!.style.transform = "translateX(-66.68%)";
     })
     document.getElementById("Bebida")?.addEventListener("click",()=>{
       var Content=document.getElementById("DivCarousel")
-      this.ObjectDrink=this.recipes.beverege
+      if(this.ObjectDrink.length==0){
+        this.NumbersRandoms=this.CardsRandom(this.recipes.beverege)
+        for(let i=0;i<5;i++){
+          this.ObjectDrink.push(this.recipes.beverege[this.NumbersRandoms[i]])
+        }
+      }
       Content!.style.transform = "translateX(-83.35%)";
     })
-    /*
+    /*ButtonMostrarMas
     document.getElementById("BebidaAlcholica")?.addEventListener("click",()=>{
       var Content=document.getElementById("DivCarousel")
       this.ObjectAlcoholicDrinks=this.recipes.AlcoholicDrink
@@ -66,18 +89,42 @@ export class CategoryPage implements OnInit {
 
   }
 
+  public GoHomeCategory(Category:string){
+    this.router.navigate(['/category/home',Category])
+  }
+
   public OptionStar(){
     this.ObjectHome=[]
     try {
       this.ObjectHome.push(this.GetMel())
       this.ObjectHome.push(this.GetBeverege())
       this.ObjectHome.push(this.GetDessert())
-      this.ObjectHome.push(this.GetGarnish())
+      this.ObjectHome.push(this.GetAccompaniments())
     } catch (error) {}
   }
 
   private NumberRandom(Number:number){
     return Math.floor(Math.random()*Number)
+  }
+  private CardsRandom(Array:InformationCard[]){
+    let Randoms:any[5]=[0,0,0,0,0]
+    for(let i=0;i<5;i++){
+      Randoms[i]=this.NumberRandom(Array.length)
+    }
+    for(let p=0;p<4;p++){
+      if(p<-1){
+        p=0
+      }
+      for(let j=p+1;j<5;j++){
+        if(Randoms[p]==Randoms[j]){
+          Randoms[j]=this.NumberRandom(Array.length)
+          p=-5
+          j=20
+        }
+      }
+    }
+    return Randoms
+    
   }
   private GetMel(){
       return this.recipes.mel[this.NumberRandom(this.recipes.mel.length)]
@@ -86,8 +133,8 @@ export class CategoryPage implements OnInit {
       return this.recipes.Dessert[this.NumberRandom(this.recipes.Dessert.length)]
   }
 
-  private GetGarnish(){
-      return this.recipes.Garnish[this.NumberRandom(this.recipes.Garnish.length)]
+  private GetAccompaniments(){
+      return this.recipes.Accompaniments[this.NumberRandom(this.recipes.Accompaniments.length)]
   }
   private GetBeverege(){
       return this.recipes.beverege[this.NumberRandom(this.recipes.beverege.length)]

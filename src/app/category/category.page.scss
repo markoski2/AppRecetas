@@ -63,6 +63,11 @@ h3,p{
   color: black;
   
 }
+.MarginButton{
+  display: flex;
+  justify-content: center;
+  margin:10px 0px;
+}
 
 @media screen and (min-width: 500px){
   .card {

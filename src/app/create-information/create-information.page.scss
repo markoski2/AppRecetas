@@ -1,6 +1,3 @@
-ion-content{
-    width: 90%;
-}
 
 .CardImg{
     width: 120px;
@@ -14,21 +11,26 @@ ion-content{
     display: flex;
     margin-bottom: 30px;
   } 
-.jaja{
-    background: green;
-}
 .inputName{
-    padding-left: 15px;
     padding-top: 20px;
 }
 .Margin{
     margin: 5px;
 }
+.InputPortions{
+    padding: 5px;
+}
+//INGREDIENTS
 .InputIngredients{
     margin: 10px  10px 0 10px;
-    width: 300px;
+    width: 250px;
     font-size: 15px;
     padding: 6px;
+}
+.H5Ingredient{
+    margin-left: 100px;
+    color: green;
+    cursor: pointer;
 }
 .TextArea{
     width: 100%;
@@ -38,4 +40,7 @@ ion-content{
 .DivHeader{
     display: flex;
     justify-content: space-between;
+}
+.MarginContent{
+    margin: 0 10px;
 }

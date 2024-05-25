@@ -71,8 +71,8 @@ export class SeeInformationPage implements OnInit {
         this.myRecipes = true;
         this.PositionMyRecipes = parseInt(id.split(":")[1])
         break;
-      case 'G':
-        this.Information = this.recipes.Garnish[parseInt(id.split(":")[1]) - 1]
+      case 'A':
+        this.Information = this.recipes.Accompaniments[parseInt(id.split(":")[1]) - 1]
         break;
       case 'M':
         this.Information = this.recipes.mel[parseInt(id.split(":")[1]) - 1]
@@ -82,9 +82,6 @@ export class SeeInformationPage implements OnInit {
         break;
       case 'D':
         this.Information = this.recipes.Dessert[parseInt(id.split(":")[1]) - 1]
-        break;
-      case 'A':
-        this.Information = this.recipes.AlcoholicDrink[parseInt(id.split(":")[1]) - 1]
         break;
 
     }
