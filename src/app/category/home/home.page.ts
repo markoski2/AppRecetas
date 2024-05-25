@@ -22,12 +22,16 @@ export class HomePage implements OnInit {
   NumberContentCards:number=5
   Category:number=0
   SeeButtonMore:Boolean=true
+  CopyId:string=""
+  NameCategory:string="Recetas"
 
 
   ngOnInit() {
     var ejemplo=null
     ejemplo=this.activatedRouted.snapshot.paramMap.get('category')
     this.gatherInformation(""+ejemplo)
+    this.CopyId=""+ejemplo
+
     
     document.getElementById("GoHome")?.addEventListener("click",()=>{
       this.router.navigate(['/category'])
@@ -35,6 +39,7 @@ export class HomePage implements OnInit {
     document.getElementById("types1")?.addEventListener("click",()=>{//PRIMARY
       var BlockType=document.getElementById("types1")
       this.NumberContentCards=0
+      this.ResetButtonsNextBack()
       if(!this.ScaleType1){
         this.Category=1;
           BlockType!.style.transform="scale(1.1,1.1)"
@@ -46,6 +51,7 @@ export class HomePage implements OnInit {
         this.selectCategory(this.Category,0,5)
       }else{
         this.resetType1(BlockType)
+        this.ReloadInformationHome()
       }
     })
     document.getElementById("types2")?.addEventListener("click",()=>{//EASY
@@ -53,6 +59,7 @@ export class HomePage implements OnInit {
       var ContentCards=document.getElementById("DivContentCard")!
       ContentCards.innerHTML=" "
       this.NumberContentCards=5
+      this.ResetButtonsNextBack()
       if(!this.ScaleType2){
         this.Category=2
           BlockType!.style.transform="scale(1.1,1.1)"
@@ -64,6 +71,7 @@ export class HomePage implements OnInit {
         this.selectCategory(this.Category,0,5)
       }else{
         this.resetType2(BlockType)
+        this.ReloadInformationHome()
       }
     })
     document.getElementById("types3")?.addEventListener("click",()=>{//THIRD
@@ -71,6 +79,7 @@ export class HomePage implements OnInit {
       var ContentCards=document.getElementById("DivContentCard")!
       ContentCards.innerHTML=" "
       this.NumberContentCards=5
+      this.ResetButtonsNextBack()
       if(!this.ScaleType3){
         this.Category=3
           BlockType!.style.transform="scale(1.1,1.1)"
@@ -82,6 +91,7 @@ export class HomePage implements OnInit {
         this.selectCategory(this.Category,0,5)
       }else{
         this.resetType3(BlockType)
+        this.ReloadInformationHome()
       }
     })
     document.getElementById("ButtonMostrarMas")?.addEventListener("click",()=>{
@@ -91,6 +101,8 @@ export class HomePage implements OnInit {
       this.LoadLessCards()
     })
   }
+
+
   public resetType1(BlockType1:any){
     BlockType1!.style.transform="scale(1,1)"
     BlockType1!.style.borderRadius="0 0 20px 20px"
@@ -116,27 +128,34 @@ export class HomePage implements OnInit {
 
   private gatherInformation(id: string) {
     this.letterCategory=id.charAt(0)
-    console.log(this.letterCategory)
+    
+    
     switch (this.letterCategory) {
       case 'A':
+        this.NameCategory="Acompañamientos"
         this.CategoryOne="Ensaladas"
-        this.CategoryTwo="Salsas"
-        this.ObjectArray=[]
+        this.CategoryTwo="Pasta"
+        this.ChangeBackgroundBocksCategory("Facil2.png","Ensalada.png","Pasta.png")
         this.StartInformationCard(this.recipes.Accompaniments)
         break;
       case 'M':
+        this.NameCategory="Comidas"
         this.CategoryOne="Microondas"
         this.CategoryTwo="Horno"
         this.StartInformationCard(this.recipes.mel)
         break;
       case 'B':
+        this.NameCategory="Bebidas"
         this.CategoryOne="Caliente"
         this.CategoryTwo="Frio"
+        this.ChangeBackgroundBocksCategory("FacilBebidas.png","BebidaCaliente.png","BebidaFria.png")
         this.StartInformationCard(this.recipes.beverege)
         break;
       case 'D':
-        this.CategoryOne="Caliente"
-        this.CategoryTwo="Frio"
+        this.NameCategory="Postres"
+        this.CategoryOne="Frio"
+        this.CategoryTwo="Caliente"
+        this.ChangeBackgroundBocksCategory("FacilDessert.png","PostreFrio.png","Horno.png")
         this.StartInformationCard(this.recipes.Dessert)
         break;
 
@@ -149,6 +168,16 @@ export class HomePage implements OnInit {
       this.ObjectArray.push(Array[i])
     }
   }
+  private ChangeBackgroundBocksCategory(urlEasy:string,url1:string,url2:string){
+    var BlockCategory1=document.getElementById("types1")
+    var BlockCategory2=document.getElementById("types3")
+    var BlockEasy=document.getElementById("types2")
+    BlockEasy!.style.backgroundImage="url('./../../../assets/icon/"+urlEasy+"')"
+    BlockCategory1!.style.backgroundImage="url('./../../../assets/icon/"+url1+"')"
+    BlockCategory2!.style.backgroundImage="url('./../../../assets/icon/"+url2+"')"
+  }
+
+
   private MoreCardsCategoryZero(Array:any,Min:number,Max:number){
     this.ObjectArray=[]
     for(let i=Min;i<Max;i++){
@@ -323,6 +352,20 @@ export class HomePage implements OnInit {
     
 
 
+  }
+
+  private ResetButtonsNextBack(){
+    var ButtonLess=document.getElementById("ButtonMostrarMenos")
+      ButtonLess!.style.display="none"
+      var ButtonLess=document.getElementById("ButtonMostrarMas")
+      ButtonLess!.style.display="block"
+      this.NumberContentCards=5
+  }
+
+  public ReloadInformationHome(){
+    this.Category=0;
+    this.gatherInformation(this.CopyId)
+    this.DrawCardCategory(this.ObjectArray)
   }
 
 }

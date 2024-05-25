@@ -2,7 +2,7 @@
     <div class="MarginToolbar backgroundColorBlue">
       <div class="MarginBtnBack">
         <ion-buttons slot="start">
-          <ion-back-button default-href="#"></ion-back-button>
+          <ion-back-button class="ColorButtonBack" default-href="#"></ion-back-button>
         </ion-buttons>
         <ion-title>RECETA</ion-title>
       </div>
@@ -13,8 +13,9 @@
     </div> 
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <div class="DivTittleName">
+    <div><img class="CardImg" src="{{Information?.webviewPath}}"></div>
     <h1>{{Information?.Name}}</h1>
   </div>
   <div>

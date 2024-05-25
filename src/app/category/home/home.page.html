@@ -1,14 +1,14 @@
 
-  <div class="header">
-    <div class="DivHeaderPart1">
-      <img id="GoHome" class="ImgHeader" src="./../../../assets/icon/home.png">
-      <h1>Name Category</h1>
+  <ion-header>
+    <div class="header">
+      <div class="DivHeaderPart1">
+        <img id="GoHome" class="ImgHeader" src="./../../../assets/icon/home.png">
+        <h1>{{NameCategory}}</h1>
+      </div>
     </div>
-  </div>
-  <div>
-    <div class="ButtonHide">
-
-    </div>
+    
+  </ion-header>
+  <ion-content>
     <div class="BlockRecomendation">
       <div id="types1" class="types1 margintypes">
         <h3>{{CategoryOne}}</h3>
@@ -24,7 +24,7 @@
         <div class="backgroundTittler"></div>
       </div>
     </div>
-    <div class="CardContent">
+    <div  class="CardContent">
       <div id="DivContentCard" class="carouselItem">
         <div id="Contenedor" class="contenedor" *ngFor="let i of ObjectArray">
           <div (click)="SeeCard(i.id)" class="card">
@@ -39,8 +39,8 @@
         </div>
       </div>
       <div class="MarginButton">
-        <ion-button id="ButtonMostrarMas">Siguiente</ion-button>
         <ion-button id="ButtonMostrarMenos">Anterior</ion-button>
+        <ion-button id="ButtonMostrarMas">Siguiente</ion-button>
       </div>
     </div>
-  </div>
+  </ion-content>

@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header >
   <ion-toolbar color="success">
     <div class="DivHeader">
         <ion-buttons slot="start">
@@ -12,9 +12,9 @@
   
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content >
   <div name="Header">
-    <div class="DatosImg">
+    <div class="DatosImg MarginContent">
       <div>
         <label for="subirimagen">
           <img for="subirimagen" class="CardImg" [src]="UrlPhoto" >
@@ -28,12 +28,12 @@
     </div>
   </div>
   
-  <div class="inputName">
+  <div class="inputName MarginContent">
     <div class="">
       <ion-input id="InputName" label="Nombre Receta:" [counter]="true" maxlength="30"></ion-input>
     </div>
     <div >
-      <select id="InputPortions" class="Margin">
+      <select id="InputPortions" class="Margin InputPortions">
         <option selected disabled value="">Establecer Cantidad de Porcion</option>
         <option value="0">1 Persona</option>
         <option value="1">2 Personas</option>
@@ -43,16 +43,19 @@
       </select>
     </div>
     <div >
-      <h5>Ingredientes:</h5>
+      <h5>INGREDIENTES:</h5>
       <div id="ingredients">
         <div >
           <label >*</label>
           <input autocomplete="off" class="InputIngredients" id="cosa">
         </div>
       </div>
+      <div>
+        <h5 class="H5Ingredient" (click)="createInputIngredients()">Agregar Ingrediente</h5>
+      </div>
     </div>
     <div>
-      <h5>Procedimiento:</h5>
+      <h5>PROCEDIMIENTO:</h5>
       <textarea id="TextAreaProcedure" class="TextArea"></textarea>
     </div>
   </div>
