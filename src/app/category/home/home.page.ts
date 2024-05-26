@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { InformationCard } from 'src/app/Service/interfaces.service';
+import { InformationCardDefault } from 'src/app/Service/interfaces.service';
 import { RecipesService } from 'src/app/Service/recipes.service';
 
 @Component({
@@ -11,8 +11,8 @@ import { RecipesService } from 'src/app/Service/recipes.service';
 export class HomePage implements OnInit {
 
   constructor(private router:Router,private recipes:RecipesService,private activatedRouted:ActivatedRoute) { }
-  ObjectArray:InformationCard[]=[]
-  ObjectCopyArrayHome:InformationCard[]=[]
+  ObjectArray:InformationCardDefault[]=[]
+  ObjectCopyArrayHome:InformationCardDefault[]=[]
   letterCategory?:string
   CategoryOne?:string
   CategoryTwo?:string
@@ -314,7 +314,7 @@ export class HomePage implements OnInit {
     }
   }
 
-  private DrawCardCategory(ObjectArray:InformationCard[]){
+  private DrawCardCategory(ObjectArray:InformationCardDefault[]){
     var ContentCards=document.getElementById("DivContentCard")!
     ContentCards.innerHTML=" "
     ObjectArray.forEach(element => {

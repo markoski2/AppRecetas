@@ -20,7 +20,6 @@ export class CreateInformationPage implements OnInit {
     Portions: "",
     Ingredients: "",
     Procedure: "",
-    CountIngredients: 0,
     filepath: "../../../assets/icon/IconMenu.png",
     webviewPath: "../../../assets/icon/IconMenu.png",
     id: ""
@@ -82,13 +81,11 @@ export class CreateInformationPage implements OnInit {
 
   public ExtractInformationIngredients(){
     this.dates.Ingredients=""
-    this.dates.CountIngredients=0
     if((document.getElementById("cosa") as HTMLInputElement).value){
       this.dates.Ingredients+=(document.getElementById("cosa") as HTMLInputElement).value
     }
     document.querySelectorAll(".IdIngredients").forEach(Element=>{
       if((Element as HTMLInputElement).value){
-        this.dates.CountIngredients++
         this.dates.Ingredients+="\n\n"+(Element as HTMLInputElement).value
       }
       
