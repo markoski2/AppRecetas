@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { InformationCard } from '../Service/interfaces.service';
+import { InformationCard, InformationCardDefault } from '../Service/interfaces.service';
 import { PhotoService } from '../Service/photo.service';
 import { RecipesService } from '../Service/recipes.service';
 
@@ -13,7 +13,8 @@ export class SeeInformationPage implements OnInit {
 
   constructor(public activatedRouted: ActivatedRoute, private bd: PhotoService, private recipes: RecipesService, private router: Router) { }
   id: string = ""
-  Information?: InformationCard
+  Information?: InformationCardDefault
+  InformationMyRecipes?: InformationCard
   myRecipes = false
   PositionMyRecipes: number = 0
   ngOnInit() {
@@ -67,9 +68,10 @@ export class SeeInformationPage implements OnInit {
   private async gatherInformation(id: string) {
     switch (id.split(":")[0]) {
       case 'R':
-        this.Information = this.recipes.SaveInformation
+        this.Information = this.recipes.SaveInformationMyRecipes
         this.myRecipes = true;
         this.PositionMyRecipes = parseInt(id.split(":")[1])
+        this.InformationMyRecipes=this.recipes.SaveInformationMyRecipes
         break;
       case 'A':
         this.Information = this.recipes.Accompaniments[parseInt(id.split(":")[1]) - 1]
@@ -89,9 +91,10 @@ export class SeeInformationPage implements OnInit {
   }
 
   private async DeleteDate() {
+
     try {
       var allArray: InformationCard[] = await this.bd.GetDateForCreateAndSavedate()
-      this.bd.DeleteInformationCard(this.Information!, allArray, this.PositionMyRecipes).finally(() => {
+      this.bd.DeleteInformationCard(this.InformationMyRecipes!, allArray, this.PositionMyRecipes).finally(() => {
         this.router.navigate(['/']).finally(() => { window.location.reload() })
       })
     } catch (error) {

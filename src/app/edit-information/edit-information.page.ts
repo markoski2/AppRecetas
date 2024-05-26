@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { InformationCard } from '../Service/interfaces.service';
-import { PhotoService } from '../Service/photo.service';
+import { PhotoService, UserPhoto } from '../Service/photo.service';
 import { RecipesService } from '../Service/recipes.service';
 
 @Component({
@@ -18,12 +18,15 @@ export class EditInformationPage implements OnInit {
     
   Information?:InformationCard
     getArray:InformationCard[]=[]
+    FileImg?:UserPhoto
     Portions:any=["1 Persona","2 Personas","3 Personas","4 Personas","+5 Personas"]
+    UrlPhoto?:string="../../../assets/icon/IconMenu.png";
 
   ngOnInit() {
-    this.Information=this.recipes.SaveInformation
+    this.Information=this.recipes.SaveInformationMyRecipes
     this.SetName()
     this.SetPortions()
+    this.UrlPhoto=this.Information?.webviewPath
     if(this.Information==null){
       this.router.navigate(['/'])
     }
@@ -38,6 +41,17 @@ export class EditInformationPage implements OnInit {
       this.ExtractProcedure()
       this.Modification(""+this.Information?.id)
     })
+
+    document.getElementById("TakePhoto")?.addEventListener("click",()=>{
+      this.TakePhoto()
+    })
+  }
+
+  public async TakePhoto(){
+    this.FileImg= await this.bd.TakePhotos()
+    this.UrlPhoto=""+this.FileImg.webviewPath
+    this.Information!.filepath=this.FileImg?.filepath
+    this.Information!.webviewPath=this.FileImg?.webviewPath
   }
 
   public SetName(){
@@ -93,33 +107,16 @@ export class EditInformationPage implements OnInit {
 
 
   private async Modification(id:String){
-    switch(id.split(":")[0]){
-      case 'R':
-        this.getArray=await this.bd.GetDateForCreateAndSavedate()
-        for(let i=0;i<this.getArray.length;i++){
-          if(this.getArray[i].id==this.Information?.id){
-            this.getArray[i]=this.Information
-            i=this.getArray.length+10
-          }
+    if(id.split(":")[0]=='R'){
+      this.getArray=await this.bd.GetDateForCreateAndSavedate()
+      for(let i=0;i<this.getArray.length;i++){
+        if(this.getArray[i].id==this.Information?.id){
+          this.getArray[i]=this.Information
+          i=this.getArray.length+10
         }
-
-        this.bd.CreateAndSaveDate(this.getArray)
-        this.router.navigate(['/'])
-        
-        break;
-      case 'A':
-        this.recipes.Accompaniments[parseInt(id.split(":")[1])-1]!=this.Information
-        break;
-      case 'M':
-        this.recipes.mel[parseInt(id.split(":")[1])-1]!=this.Information
-        break;
-      case 'B':
-        this.recipes.beverege[parseInt(id.split(":")[1])-1]!=this.Information
-        break;
-      case 'D':
-        this.recipes.Dessert[parseInt(id.split(":")[1])-1]!=this.Information
-        break;
-
+      }
+      this.bd.CreateAndSaveDate(this.getArray)
+      this.router.navigate(['/'])
     }
   }
 

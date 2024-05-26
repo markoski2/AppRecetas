@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { InformationCard } from '../Service/interfaces.service';
+import { InformationCardDefault, InformationCard } from '../Service/interfaces.service';
 import { RecipesService } from '../Service/recipes.service';
 import { PhotoService } from '../Service/photo.service';
 
@@ -13,12 +13,12 @@ export class CategoryPage implements OnInit {
 
   constructor(private router:Router,private recipes:RecipesService,private bd:PhotoService) { }
   ObjectMyRecipes:InformationCard[]=[]
-  ObjectHome:InformationCard[]=[]
-  ObjectAccompaniments:InformationCard[]=[]
-  ObjectMel:InformationCard[]=[]
-  ObjectDessert:InformationCard[]=[]
-  ObjectDrink:InformationCard[]=[]
-  ObjectAlcoholicDrinks:InformationCard[]=[]
+  ObjectHome:InformationCardDefault[]=[]
+  ObjectAccompaniments:InformationCardDefault[]=[]
+  ObjectMel:InformationCardDefault[]=[]
+  ObjectDessert:InformationCardDefault[]=[]
+  ObjectDrink:InformationCardDefault[]=[]
+  ObjectAlcoholicDrinks:InformationCardDefault[]=[]
   NumberArray:number=0
   NumbersRandoms?:any[5]
 
@@ -106,7 +106,7 @@ export class CategoryPage implements OnInit {
   private NumberRandom(Number:number){
     return Math.floor(Math.random()*Number)
   }
-  private CardsRandom(Array:InformationCard[]){
+  private CardsRandom(Array:InformationCardDefault[]){
     let Randoms:any[5]=[0,0,0,0,0]
     for(let i=0;i<5;i++){
       Randoms[i]=this.NumberRandom(Array.length)
@@ -149,7 +149,7 @@ export class CategoryPage implements OnInit {
     this.router.navigate(['/see-information',Card])
   }
   public SeeCardMyRecipes(Card:InformationCard,position:number){
-    this.recipes.SaveInformation=Card
+    this.recipes.SaveInformationMyRecipes=Card
     this.router.navigate(['/see-information',"R:"+position])
   }
 
