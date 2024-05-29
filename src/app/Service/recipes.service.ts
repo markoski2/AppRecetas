@@ -9,21 +9,21 @@ export class RecipesService {
   SaveInformation?:InformationCardDefault
   SaveInformationMyRecipes?:InformationCard
 
-  EasyAccompaniments:number[]=[1,2,7,10,12,15]
-  PrimaryAccompaniments:number[]=[11,12,13,14,17]
-  ThirdAccompaniments:number[]=[0,1,5,6,17]
+  EasyAccompaniments:number[]=[1,2,7,10,12,15,18]
+  PrimaryAccompaniments:number[]=[11,12,13,14,17,18,20]
+  ThirdAccompaniments:number[]=[0,1,5,6,17,19]
 //=["","","","","","",""]
   EasyMel:number[]=[0,1,2,4,8,9,13,14]
-  PrimaryMel:number[]=[11,14]
-  ThirdMel:number[]=[12]
-
-  EasyDrink:number[]=[2,4,5,6,9,14]
+  PrimaryMel:number[]=[10,11,12,14,15]//horno
+  ThirdMel:number[]=[4,6,7,8,13,16,17]//SARETEN
+  
+  EasyDrink:number[]=[2,4,5,6,9,14,15]
   PrimaryDrink:number[]=[10,11,13,14,12]
-  ThirdDrink:number[]=[6,7]
+  ThirdDrink:number[]=[6,7,15,16,17,18,19]
 
-  EasyDessert:number[]=[0,5,8]
-  PrimaryDessert:number[]=[0,1,9]
-  ThirdDessert:number[]=[7,8]
+  EasyDessert:number[]=[0,5,8,12,13,14,15]
+  PrimaryDessert:number[]=[0,1,9,11,16,17]
+  ThirdDessert:number[]=[7,8,10,12,13,14,15]
 
 
 
@@ -309,6 +309,63 @@ export class RecipesService {
     "4:En un traste o cacerola agregamos la pasta, el atúm, la ralladura de limón, un poco de aceite de oliva, sal y pimienta.\n\n"+
     "5:Mezclamos bien y servimos\n\n",
     webviewPath: "../../../assets/ImgRecipes/EnsaladaPastaCalabacin.png"
+  },{
+    id:"A:19",
+    Name:"ENSALADA DE NOPALES",
+    Portions:"2 Personas",
+    Ingredients:"*3 tazas de nopales cortados en cuadritos\n\n"+
+    "*1 jitomate\n\n"+
+    "*1/2 cebolla\n\n"+
+    "*100 gramos de queso blanco fresco\n\n"+
+    "*Sal y pimienta al gusto\n\n"+
+    "*Cilantro fresco\n\n"+
+    "*Jugo de limon\n\n"+
+    "*1 cucharadita de aceite de oliva\n\n",
+    Procedure:"1:Cortar la cebollla y el jitomate en cudtios pequeños. Cortar el cilantro de forma fina.\n\n"+
+    "2:En una olla con agua poner los nopales con un toque de sal y cocinarlos durante 10 minutos o hasta que esten blandos. Una vez cocidos los nopales cuela y agrega en un recipiente.\n\n"+
+    "3:En el recipiente agregar el jitomate cortado, la cebolla, cilantro, sal y pimienta, el jugo del limon y el aceite de oliva. Mezclar bien.\n\n"+
+    "4:Al servir adornar con queso fresco.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/EnsaladaNopales.png"
+  },{
+    id:"A:20",
+    Name:"Macarrones con Queso",
+    Portions:"3 Personas",
+    Ingredients:"*250 g de macarrones\n\n"+
+    "*2 tazas de leche\n\n"+
+    "*2 cucharadas de harina\n\n"+
+    "*2 cucharadas de mantequilla derretida\n\n"+
+    "*1 taza de queso cheddar rallado\n\n"+
+    "*Sal y pimienta al gusto\n\n",
+    Procedure:"1:Cocina los macarrones según las instrucciones del paquete. Escurre y reserva.\n\n"+
+    "2:En una cacerola añadir la harina y la mantequilla, removiendo constantemente durante 1 a 2 minutos.\n\n"+
+    "3:Añade la leche poco a poco, removiendo constantemente hasta que la mezcla espese.\n\n"+
+    "4:Añade el queso cheddar rallado y remueve hasta que se derrita.\n\n"+
+    "5:Añade los macarrones cocidos a la salsa de queso y mezcla bien.\n\n"+
+    "6:Agrege la sal y la pimienta, al gusto y sirve caliente.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/MacarronesQueso.png"
+  },{
+    id:"A:21",
+    Name:"Ensalada Mediterránea",
+    Portions:"4 Personas",
+    Ingredients:"*2 tazas de lechuga mixta (puede ser romana, iceberg, espinaca, rúcula, etc.)\n\n"+
+    "*1 pepino, cortado en rodajas finas\n\n"+
+    "*1 jitomate grande, cortado en cubos\n\n"+
+    "*1/2 cebolla morada, cortada en rodajas finas\n\n"+
+    "*1/2 taza de aceitunas negras o verdes, deshuesadas y cortadas a la mitad\n\n"+
+    "*1/2 taza queso panela o el queso fresco, desmenuzado\n\n"+
+    "*1 pimiento rojo, cortado en tiras\n\n"+
+    "*1 aguacate, cortado en cubos (opcional)\n\n"+
+    "*1/4 taza de aceite de oliva virgen extra\n\n"+
+    "*2 cucharadas de vinagre balsámico o jugo de limón\n\n"+
+    "*Sal y pimienta al gusto\n\n"+
+    "*1 cucharadita de orégano seco\n\n",
+    Procedure:"1:Lava bien todas las verduras.\n\n"+
+    "2:Corta la lechuga en trozos del tamaño de un bocado si es necesario. Si usas aguacate, añádelo a la ensalada.\n\n"+
+    "3:Para el aderezo utilizar un pequeño tazón aparte, mezcla el aceite de oliva, el vinagre balsámico o jugo de limón, el orégano, la sal y la pimienta.\n\n"+
+    "4:Bate bien hasta que el aderezo esté bien combinado.\n\n"+
+    "5:Vierte el aderezo sobre la ensalada y mezcla suavemente para que todos los ingredientes se impregnen del aderezo.\n\n"+
+    "6:Sirve inmediatamente.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/EnsaladaMediterraneo.png"
   }]
 
   mel=[{//FACIL
@@ -391,7 +448,7 @@ export class RecipesService {
     "4:Al pollo se le agrega lo molido\n\n"+
     "5:Se revuelve y se tapa, se tiene que mover constantemente hasta que el pollo este cocido\n\n",
     webviewPath: "../../../assets/ImgRecipes/PolloChipotle.png"
-  },{//FACIL
+  },{//FACIL SARTEN
     id:"M:5",
     Name:"CROQUETAS DE ATUM",
     Portions:"4 Personas",
@@ -425,7 +482,7 @@ export class RecipesService {
     "5:Se le echa lo molido al chicharron\n\n"+
     "6:Se le echa agua al gusto, el chicharron absorbe algo de agua\n\n",
     webviewPath: "../../../assets/ImgRecipes/ChicharronSalsa.png"
-  },{
+  },{//SARTEN
     id:"M:7",
     Name:"Langostinos en mantequilla",
     Portions:"+5 Personas",
@@ -446,7 +503,7 @@ export class RecipesService {
     "6:Freir hasta y revolver hasta que los langostinos o camarones se vuelvan rosados, firmes y opacos, 1 a 2 minutos por cada lado. No refreir.\n\n"+
     "7:Antes de servirlos, agregar el perejil picado y condimentar con sal y pimienta. Adornar con las rodajas y el perejil si se quiere.\n\n",
     webviewPath: "../../../assets/ImgRecipes/LagartinosMantequilla.png"
-  },{
+  },{//SARTEN
     id:"M:8",
     Name:"Milanesas Cordon Blue",
     Portions:"+5 Personas",
@@ -463,7 +520,7 @@ export class RecipesService {
     "3:Empanizar las milanesas y frielas en suficiente aceite y déjarlas escurrir.\n\n"+
     "4:Sirvelas con arroz y verduras.\n\n",
     webviewPath: "../../../assets/ImgRecipes/MilanesaCordon.png"
-  },{//FACIL
+  },{//FACIL SARTEN
     id:"M:9",
     Name:"Ejotes con huevo",
     Portions:"1 Persona",
@@ -490,7 +547,7 @@ export class RecipesService {
     "3:Agregue las papas y agrege sal al gusto.\n\n"+
     "4:Deje dorar ligeramente.\n\n",
     webviewPath: "../../../assets/ImgRecipes/PapasLonganiza.png"
-  },{
+  },{//MICRO
     id:"M:11",
     Name:"Pollo al vino",
     Portions:"+5 Personas",
@@ -515,7 +572,7 @@ export class RecipesService {
     "7:Procure que las piezas queden bien cubiertas con la salsa.\n\n"+
     "8:Tape y cocine a durante 10 minutos o hasta que el pollo este tierno.\n\n",
     webviewPath: "../../../assets/ImgRecipes/PolloVino.png"
-  },{//MICROONDAS
+  },{//MICRO
     id:"M:12",
     Name:"Albondigon",
     Portions:"+5 Personas",
@@ -561,7 +618,7 @@ export class RecipesService {
     "8:Hornear 35 minutos. Destapar y hornear 20 minutos más o hasta que las papas estén tiernas y no demasiado hechas.\n\n"+
     "9:Adornar con el ramito de tomillo si se quiere. Servir\n\n",
     webviewPath: "../../../assets/ImgRecipes/PapasGratinadas.png"
-  },{//FACIL
+  },{//FACIL SARTEN
     id:"M:14",
     Name:"Papas suizas",
     Portions:"4 Personas",
@@ -575,7 +632,7 @@ export class RecipesService {
     "4:Extender la papa rallada uniformemente en el salten (No revolver ni dar vuelta) Agregar sal y pimienta al gusto. Cocinar 10 a 12 minutos hasta que se dore.\n\n"+
     "5:Apagar el fuego. Con un recipiento o un plato invertir la cara de la papa sobre el sarten. Dejar dorar y servir.\n\n",
     webviewPath: "../../../assets/ImgRecipes/PapasSuizas.png"
-  },{//Microondas || FACIL
+  },{//MICROONDAS FACIL
     id:"M:15",
     Name:"Patatas gajo",
     Portions:"3 Personas",
@@ -597,6 +654,70 @@ export class RecipesService {
     "7:Revolver con una cuchara las papas y volver a cubrir con  el papel film. volver a cocinar por 5 minutos o hasta que las papas este suaves.\n\n"+
     "8:Retirar con mucho cuidado el papel y añadir un poco de sal, al gusto.\n\n",
     webviewPath: "../../../assets/ImgRecipes/PapasGajo.png"
+  },{//HORNO
+    id:"M:16",
+    Name:"Pollo asado al horno con patatas",
+    Portions:"4 Personas",
+    Ingredients:"*4 patatas medianas\n\n"+
+    "*30 ml de aceite de oliva virgen\n\n"+
+    "*Sal\n\n"+
+    "*Pimienta negra molida\n\n"+
+    "*Media cebolla\n\n"+
+    "*6 dientes de ajo\n\n"+
+    "*1,2 kg de pollo\n\n"+
+    "*200 ml de vino blanco\n\n"+
+    "*1 rama de romero\n\n",
+    Procedure:"1:Lavamos las patatas, las pelamos y cortamos en rodajas.\n\n"+
+    "2:En una bandeja para horno engrasada y agregamos los 30 ml de aceite de oliva virgen.\n\n"+
+    "3:Ponemos las patatas, agregamos sal y pimienta. Repartimos sobre ellas medias rodajas de cebolla y 6 dientes de ajo cortados por la mitad.\n\n"+
+    "4:En un recipiente con el pollo le agregamos sal y pimienta.\n\n"+
+    "5:Ponemos las piezas de pollo encima de las patatas con la cebolla y el ajo.\n\n"+
+    "6:Sobre el pollo vertemos 200ml de vino blanco y añadimos una rama de romero para aromatizar el asado.\n\n"+
+    "7:Precalentamos el horno a 200 °C y horneamos durante 45 minutos.\n\n"+
+    "8:Despues de los 45 minutos le damos la vuelta a las piezas de pollo para que quede tostada por todas partes.\n\n"+
+    "9:Devolvemos el pollo al horno y horneamos por otros 45 minutos y servimos.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/PolloPatatas.png"
+  },{//SARTEN
+    id:"M:17",
+    Name:"Huevos a la mexicana",
+    Portions:"2 Personas",
+    Ingredients:"*5 huevos\n\n"+
+    "*2 jitomates rojos cortados en cuadritos\n\n"+
+    "*1/4 de cebolla picada\n\n"+
+    "*1 chile serrano sin semillas cortado en cuadritos\n\n"+
+    "*Aceite\n\n"+
+    "*Sal al gusto\n\n",
+    Procedure:"1:Calentar el aceite en un sartén y fríe la cebolla, el jitomate y el chile. Agregar un poco de sal.\n\n"+
+    "2:Agregar los huevos batidos y cocinar durante 5 minutos o hasta que esten cocidos. Mover contantemente para que no se peguen.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/HuevosMexicana.png"
+  },{//SARTEN
+    id:"M:18",
+    Name:"Salteado de Verduras",
+    Portions:"3 Personas",
+    Ingredients:"*1 pimiento rojo, cortado en tiras\n\n"+
+    "*1 pimiento verde, cortado en tiras\n\n"+
+    "*1 pimiento amarillo, cortado en tiras\n\n"+
+    "*1 cebolla mediana, cortada en juliana\n\n"+
+    "*2 zanahorias, cortadas en rodajas finas\n\n"+
+    "*1 calabacín, cortado en medias lunas\n\n"+
+    "*1 taza de brócoli, en floretes pequeños\n\n"+
+    "*2 dientes de ajo, picados\n\n"+
+    "*2 cucharadas de aceite de oliva\n\n"+
+    "*2 cucharadas de salsa de soja\n\n"+
+    "*Sal y pimienta al gusto\n\n"+
+    "*Jugo de limón (OPCIONAL)\n\n"+
+    "*Salsa de soja (OPCIONAL)\n\n",
+    Procedure:"1:Lava muy bien y corta todas las verduras\n\n"+
+    "2:Calienta una sartén grande a fuego medio-alto y añade el aceite de oliva.\n\n"+
+    "3:Agrega el ajo picado y fríe durante 1 minuto.\n\n"+
+    "4:Añade la cebolla y las zanahorias, y saltea durante unos 3-4 minutos, o hasta que comiencen a ablandarse.\n\n"+
+    "5:Incorpora los pimientos, el brócoli y calabacín, y cocina durante 5-7 minutos, removiendo ocasionalmente.\n\n"+
+    "6:Vierte la salsa de soja sobre las verduras y mezcla bien. Añade sal y pimienta al gusto, pero ten en cuenta que la salsa de soja ya es salada.\n\n"+
+    "7:Si lo deseas, añade el jugo de medio limón para darle un toque fresco.\n\n"+
+    "8:\n\n"+
+    "9:\n\n"+
+    "10:\n\n",
+    webviewPath: "../../../assets/ImgRecipes/SalteadoVerdura.png"
   }]
 
   beverege=[{
@@ -677,7 +798,7 @@ export class RecipesService {
     "*Jugo de limón\n\n"+
     "*Hojas de menta (OPCIONAL)\n\n",
     Procedure:"1:Cortar la sandia en cubos, retirando las semillas y la cascara de la sandia.\n\n"+
-    "2:Dejar reposar la sandia en el refrigerador hasta que este congelada. \n\n"+
+    "2:Dejar reposar la sandia en el congelador hasta que este congelada. \n\n"+
     "3:Cuando la sandia se encuentre congelada, agregarla en la licuadora la sandia, el hielo, el jugo de limón y el azúcar, hasta tener una textura granizado.\n\n"+
     "4:Servirlo en un vaso y decorar con las hojas de menta.\n\n",
     webviewPath: "../../../assets/ImgRecipes/GranizadoSandia.png"
@@ -793,6 +914,82 @@ export class RecipesService {
     "2:Agregar la vainilla y el chocolate. Mezclar por aproximadamente 1 minuto hasta que el chocolate se derrita por completo.\n\n"+
     "3:En un vaso agregar la leche ya con el chocolate derretido. Agregar la crema batida y adornar con las chispas de chocolate,\n\n",
     webviewPath: "../../../assets/ImgRecipes/ChocolateRosa.png"
+  },{//FACIL FRIO
+    id:"B:16",
+    Name:"Limonada de frutos rojos",
+    Portions:"4 Personas",
+    Ingredients:"*100 gramos (25 a 30 piezas aprox) de frambuesas\n\n"+
+    "*100 gramos (4 a 6 piezas aprox) de fresas\n\n"+
+    "*100 gramos (una taza aprox) de arándanos rojos\n\n"+
+    "*2 cucharadas de jugo de limón\n\n"+
+    "*3 cucharadas de azúcar morena\n\n"+
+    "*Hierbabuena\n\n",
+    Procedure:"1:Lavamos bien todas las frutas\n\n"+
+    "2:Agregamos todos los ingredientes a la licuadora con 4 cubos de hielo al gusto \n\n"+
+    "3:Agregamos la azúcar morena y 1 hoja de hierbabuena.\n\n"+
+    "4:Trituramos bien y colamos.\n\n"+
+    "5:Servimos en cada vaso y agregamos una hojita de hierbabuena con un poco mas de hielo.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/JugoFrutosRojos.png"
+  },{//FRIO
+    id:"B:17",
+    Name:"Granizado de café",
+    Portions:"4 Personas",
+    Ingredients:"*500 ml de cafe(bebida)\n\n"+
+    "*Azúcar\n\n"+
+    "*8 ml de jugo de limon\n\n"+
+    "*100ml de agua\n\n",
+    Procedure:"1:Preparamos 500 ml de cafe del que consuminos habitualmente en casa. \n\n"+
+    "2:En una olla vierte 100 ml de agua y añadir 3 cucharadas de azúcar. Dejar calentar a fuego lento durante 10 minutos y remover con una cuchara contantemente hasta que el azúcar se disuelva hasta que tengas una especie de jarabe con tono claro.\n\n"+
+    "3:Retiramos la olla del fuego y añadimos el café que se preparo anteriormente.\n\n"+
+    "4:Vierta el contenido en un recipiente y dejar congelar durante 30 minutos\n\n"+
+    "5:Una vez transcurrido los 30 minutos, revuelva y rompa los cristales de hielo formados y vuelva a introducirlo en el congelador por 30 minutos.\n\n"+
+    "6:Repetir el proceso cada 30 minutos hasta que se tenga una textura de pequeños cristales de hielo.\n\n"+
+    "7:Servir en vasos y si gustas puedes decorar con un poco de canela.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/GranizadoCafe.png"
+  },{//FRIO
+    id:"B:18",
+    Name:"Agua de limón con hierbabuena",
+    Portions:"4 Personas",
+    Ingredients:"*4 liomones \n\n"+
+    "*4 limas\n\n"+
+    "*Azúcar o endulzante al gusto\n\n"+
+    "*Hielo (OPCIONAL)\n\n"+
+    "*Hojas de menta (OPCIONAL)\n\n"+
+    "*Rodajas de limon verde y amarillos (OPCIONAL)",
+    Procedure:"1:Exprime el jugo de los limones verdes y amarillos.\n\n"+
+    "2:En una jarra grande, mezcla el jugo de los limones con los 2 litros de agua fría.\n\n"+
+    "3:Añade azúcar o el endulzante de tu elección al gusto y mezcla bien hasta que se disuelva.\n\n"+
+    "4:Agrega hielo, las rodajas y las hojas de menta si lo deseas.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/Limonada.png"
+  },{
+    id:"B:19",
+    Name:"Agua de melón con frambuesa",
+    Portions:"+5 Personas",
+    Ingredients:"*2 tazas de melón cortado en cubos\n\n"+
+    "*1/2 taza de frambuesas\n\n"+
+    "*Azúcar o endulzante al gusto\n\n"+
+    "*1 1/2 litro de agua\n\n"+
+    "*Hielos\n\n",
+    Procedure:"1:En la licuadora mezclar el melon, las frambuesas y un poco de agua.\n\n"+
+    "2:En un recipiente agregar el agua, el contenido de la licuadora y endulzar al gusto. \n\n"+
+    "3:Agregar los  hielos al gusto.\n\n"+
+    "4:Si gustar decórar los basos con una frambuesa.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/AguaMelonFranbuesa.png"
+  },{
+    id:"B:20",
+    Name:"Limonada de Fresa y Menta",
+    Portions:"3 Personas",
+    Ingredients:"*15 fresas\n\n"+
+    "*4 a 6 limones\n\n"+
+    "*4 tazas de agua fria\n\n"+
+    "*Azúcar al gusto\n\n"+
+    "*Hojas de menta\n\n"+
+    "*Hielo\n\n",
+    Procedure:"1:Lavar muy bien las fresas. Colocar las fresas en una licuadora  y licúa hasta obtener un textura suave.\n\n"+
+    "2:En una jarra grande, combina las fresas, el jugo de limón, el azúcar y las 4 tazas de agua fría. Revuelve bien hasta que el azúcar se disuelva.\n\n"+
+    "3:Agrega algunas hojas de menta fresca y mezcla ligeramente para liberar el aroma. Llena la jarra con hielo.\n\n"+
+    "4:Sirve la limonada de fresa y menta en vasos con más hielo si lo deseas, y adorna con una fresa o una ramita de menta.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/LimonadaFresa.png"
   }]
   
   Dessert=[{//FACIL || FRIO
@@ -1001,6 +1198,160 @@ export class RecipesService {
   "4:Dejar enfriar completamente antes de llevarlo al refrigerador. \n\n"+
   "5:Dejar reposar por un minimo de 4 horas.\n\n",
   webviewPath: "../../../assets/ImgRecipes/FlanQueso.png"
+  },{//Caliente
+    id:"D11:",
+    Name:"COULANT DE CHOCOLATE",
+    Portions:"4 Personas",
+    Ingredients:"*90 gramos de azúcar\n\n"+
+    "*2 huevos\n\n"+
+    "*70 gramos de harina\n\n"+
+    "*110 gramos de chocolate negro\n\n"+
+    "*4 onzas de chocolate negro\n\n"+
+    "*110 gramos de mantequilla\n\n",
+    Procedure:"1:Colocar en un recipienta la mantequilla y los 110 gramos de chocolate negro y ponerlo en el microondas durante 1 minutos o hasta que este derretido el contenido.\n\n"+
+    "2:Bate con una cuchara o unas varillas para comprobar si realmente este derretido.\n\n"+
+    "3:En otro recipiente añadir y batir los huevos con el azúcar y la harina.\n\n"+
+    "4:En el recipiente donde estan los huevos batidos añadir el chocolate fundido removiendo bien.\n\n"+
+    "5:Vaciar sobre unos moldes para cupcakes o moffins y introduccir un trocito de chocolate y ponerlo en el centro.\n\n"+
+    "6:Los cubrimos con papel film y los metemos al congelador durante minimo 2 horas.\n\n"+
+    "7:Precalentar el horno a 180°C. Meter los moldes durante 15 a 17 minutos.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/COULANT.png"
+  },{//Caliente
+    id:"D:12",
+    Name:"Mousse de mandarina",
+    Portions:"4 Personas",
+    Ingredients:"*250ml de jugo de mandarina\n\n"+
+    "*1 sobre de gelatina neutra\n\n"+
+    "*1 yogurt natural desnatado\n\n"+
+    "*1 mandarina\n\n"+
+    "*1 hoja de menta\n\n",
+    Procedure:"1:En recipiente ponemos a calentar 125 ml de agua. cuando este hirviendo retirar del fuego y añadir la gelatina y la mitad del zumo. \n\n"+
+    "2:Poner en un recipiente y dejar reposar por un timepo.\n\n"+
+    "3:Cuando la preparacion empiece a espesar ligeramente batir y añadir poco a poco el zumo mezclado con el yogurt.\n\n"+
+    "4:Poner el recipiente en 4 vasos y déjar reposar en la nevera por 3 o 4 horas hasta que esté cuajada.\n\n"+
+    "5:A la hora de consumir puedes decorar con la hoja de menta y poner un gajo de mandarina.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/MouseeMandarina.png"
+  },{//frio
+    id:"D:13",
+    Name:"PALETAS DE COCO Y FRUTA",
+    Portions:"+5 Personas",
+    Ingredients:"*2 tazas de leche de coco\n\n"+
+    "*Miel de agave\n\n"+
+    "*1 taza de kiwi, cortado en cubos\n\n"+
+    "*1 taza de frambuesa, cortados por la mitad\n\n"+
+    "*1 taza de mango, cortado en cubos\n\n",
+    Procedure:"1:En un recipiente mezcla la leche de coco con la miel de agave, al gusto.\n\n"+
+    "2:En un recipiente para paletas agrega la fruta y rellena con la mezcla de la leche de coco.\n\n"+
+    "3:Congela por 3 horas.\n\n"+
+    "4:Retirar del congelador y servir.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/PaletasCoco.png"
+  },{//FRIO FACIL
+    id:"D:14",
+    Name:"Magnum Caseras",
+    Portions:"+5 Personas",
+    Ingredients:"*3 tazas de crema para batir\n\n"+
+    "*3/4 tazas de leche condensada\n\n"+
+    "*1 cucharada de vainilla liquida\n\n"+
+    "*4 tazas de chocolate amargo, derretido\n\n"+
+    "*1/2 taza de almendaras picadas\n\n",
+    Procedure:"1:Batir la crema hasta que se vea muy esponjosa. \n\n"+
+    "2:Agrega la leche condensada y la vainilla, mezclar muy bien. \n\n"+
+    "3:Vierta la mezcla en moldes para paletas y colocar un palito.\n\n"+
+    "4:Congela por 12 horas.\n\n"+
+    "5:Desmoldar la paletas y sumerge en el chocolate hasta cubrirla por completo.\n\n"+
+    "6:Esparce un poco de almendras picadas en las paletas antes de que el chocolate se endurezca.\n\n"+
+    "7:Congelar por 10 minutos y servir.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/Magnum.png"
+  },{//FRIO FACIL
+    id:"D:15",
+    Name:"Chocobananas",
+    Portions:"+5 Personas",
+    Ingredients:"*6 plátanos\n\n"+
+    "*1 taza de chocolate oscuro\n\n"+
+    "*1/2 taza de coco rallado (OPCIONAL)\n\n"+
+    "*1/2 taza nuez finamente picados (OPCIONAL)\n\n"+
+    "*1/2 taza de chispas de colores\n\n"+
+    "*trozos pequeños de galleta OREO (OPCIONAL)\n\n",
+    Procedure:"1:Retirar la cáscara de los platanos y cortar por la mitad.\n\n"+
+    "2:Insertar un palo a cada trozo de platano.\n\n"+
+    "3:Dejar congelar por lo menos 4 horas.\n\n"+
+    "4:Derretir el chocolate y sumergir los trozos de plátanos, hasta que queden completamente cubiertos del chocolate.\n\n"+
+    "5:Espolvorear el coco, las nueces, las chispas de chocolate o las galletas, dependiendo del gusto.\n\n"+
+    "6:En una rejilla dejar escurrir el exceso y dejar congelar por minimo 2 horas.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/Chocobananas.png"
+  },{//FRIO FACIL
+    id:"D:16",
+    Name:"Fresas con crema",
+    Portions:"+5 Personas",
+    Ingredients:"*1 kilo de fresas\n\n"+
+    "*1/2 lata de leche condensada\n\n"+
+    "*1 lata de media crema\n\n"+
+    "*1/2 lata de leche evaporada\n\n"+
+    "*3 cucharadas de crema agria\n\n"+
+    "*1 cucharada de vainilla\n\n"+
+    "*Crema batida para decorar (OPCIONAL)\n\n",
+    Procedure:"1:Lavar muy bien las fresas y cortar en cuadros pequeños o rebanadas pequeñas, dependiendo de la forma que mas te guste.\n\n"+
+    "2:En un recipiente grande mezclar la leche condensada, la leche evaporada, la media crema, la crema agria, la vainilla.\n\n"+
+    "3:Agregar las fresas ya cortadas.\n\n"+
+    "4:Decorar con la crema batida si gustas y servir. Si gustas puedes refrigerar por 30 min para que esten frias.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/FresasCremas.png"
+  },{//CALIENTE
+    id:"D:17",
+    Name:"Crepas de fruta",
+    Portions:"+5 Personas",
+    Ingredients:"*1 taza de leche \n\n"+
+    "*1 taza de harina de trigo\n\n"+
+    "*1 huevo\n\n"+
+    "*1 cucharada de azúcar\n\n"+
+    "*2 cucharadas de vainilla\n\n"+
+    "*2 cucharadas de mantequilla derretirda\n\n"+
+    "*2 platanos, para el relleno\n\n"+
+    "*Fresas en cuadritos pequeños, para el relleno\n\n"+
+    "*Chocolate liquido, para el relleno\n\n"+
+    "*Crema batida, para el relleno\n\n",
+    Procedure:"1:En un recipiente agregar el huevo, la mantequilla, la leche y el azúcar.\n\n"+
+    "2:Mezclar muy bien y agregar la vainilla.\n\n"+
+    "3:Añadir poco a poco la harina y seguir batiendo hasta tener una masa suave.\n\n"+
+    "4:Poner al fuego un sarten y cuando este caliente agregar un poco de mantequilla para que las crepas no se queden pegadas al sarten.\n\n"+
+    "5:Agregar una pequeña cantidad de la mezcla, dependiendo del tamaño que gustes. Mueve el sarten de forma circular o con la ayuda de un utensilios de cocina mover de forma circular, de modo que la mezcla se reparta por el sarten sin dejar huecos vacíos y quede una capa fina. \n\n"+
+    "6:Cuando a la mezcla se llenen de pequeñas burbujas con una espatula darle la vuelta con mucho cuidado y retirar cuando ya este cocido, sin dejar por mucho tiempo al fuego, ya que la masa es fina y se cocina rapido ,por lo que no debera estar al fuego por mas de 2 minutos\n\n"+
+    "7:Para el relleno agregar la crema batida, la fruta en trozos pequeños y doblar para crepa. Decorar con el chocolate liquido, si gustas.\n\n"+
+    "8:\n\n"+
+    "9:\n\n"+
+    "10:\n\n",
+    webviewPath: "../../../assets/ImgRecipes/CrepasFrutas.png"
+  },{//Caliente
+    id:"D:18",
+    Name:"Choco-rol",
+    Portions:"+5 Personas",
+    Ingredients:"*6 huevos, separando las claras y las yemas\n\n"+
+    "*1 taza de azúcar\n\n"+
+    "*1 barra de mantequilla derretida\n\n"+
+    "*1 taza de hariona\n\n"+
+    "*4 cucharadas de cocoa en polvo\n\n"+
+    "*1 cuchara de polvo para hornear\n\n"+
+    "*1 cucharada de vainilla\n\n"+
+    "*2 paquetes de queso crema \n\n"+
+    "*1/4 taza de azúcar glass\n\n"+
+    "*1 taza de crema para batir\n\n"+
+    "*Mermelada de piña\n\n"+
+    "*1 taza de chocolate\n\n"+
+    "*3 cucharadas de leche\n\n",
+    Procedure:"1:Precalentar el horno a 180°C\n\n"+
+    "2:De los 6 huevos, separar las claras y las yemas. Batir las claras agregando la mitad de la taza de azúcar hasta que este a punto de turrón (hasta que lograr un tono blanco opaco y que, al voltear el tazón donde se baten, queden adheridas sin resbalarse o caer). \n\n"+
+    "3:Batir las yemas con la mantequilla derretida ya fria, el resto del azúcar, la escencia de vainilla y utilizando un colador agregar la cocoa, la harina y el polvo para hornear para evitar que ciertas imperfecciones entren a la mezcla.\n\n"+
+    "4:Batir por 1 minuto o hasta que quede bien revuelto todo. Añadir las claras ya batidas y mezclar muy bien.\n\n"+
+    "5:Ponerle un poquito de grasa a una charola plana para hornear pequeña como de unos 40 cm de largo y 30 de ancho, aproximadamente. Agregar a la charola papel encerado con un poquito de aceite encima.\n\n"+
+    "6:Agregar toda la mezcla y distribuir por todo el molde.\n\n"+
+    "7:Hornear por 10 a 14 minutos y revisar si esta cocido, si todavia esta crudo dejar 1 minuto mas.\n\n"+
+    "8:Despegar las orillas del pan y con la ayuda de otro recipiente plano o de una tabl, saquemos el pan de la charola y lo ponemos sobre un paño (trapo). \n\n"+
+    "9:Aun caliente retiramos el papel encerado del pan y con la ayuda del paño enrollamos y deja enfriar por 15 min.\n\n"+
+    "10:Para hacer el relleno batir el queso crema con azúcar glass, la crema para batir y bate por 7 minutos.\n\n"+
+    "11:Desenrolla el pan y unta por toda la parte de arriba la mezcla de la crema, agrega la mermelada de piña, enrolla y deja enfriar por aproximadamente 1 hora o más, si gustas lo puede meter al refrigerador para que se enfrie.\n\n"+
+    "12:En una olla poner las 3 cucharadas de leche y cuando este caliente, agregar el chocolate y mover hasta que este derretido por compoleto.\n\n"+
+    "13:Esparcir por todo el rollo hasta que no quede ningun hueco vacio.\n\n"+
+    "5:Dejar elfria el chocolate y servir.\n\n",
+    webviewPath: "../../../assets/ImgRecipes/Chocorrol.png"
   }]
 
   AlcoholicDrink=[{
@@ -1059,9 +1410,7 @@ export class RecipesService {
   "8:\n\n"+
   "9:\n\n"+
   "10:\n\n",
-  CountIngredients:0,
-  filepath: "../../../assets/icon/IconMenu.png",
-  webviewPath: "../../../assets/icon/IconMenu.png"
+  webviewPath: "../../../assets/ImgRecipes/Limonada.png"
   */
 
 }

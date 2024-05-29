@@ -140,8 +140,8 @@ export class HomePage implements OnInit {
         break;
       case 'M':
         this.NameCategory="Comidas"
-        this.CategoryOne="Microondas"
-        this.CategoryTwo="Horno"
+        this.CategoryOne="Horno & Microondas"
+        this.CategoryTwo="Sarten"
         this.StartInformationCard(this.recipes.mel)
         break;
       case 'B':
@@ -203,8 +203,8 @@ export class HomePage implements OnInit {
   }
   private LoadLessCards(){
     if(!this.SeeButtonMore){
-      var ButtonLess=document.getElementById("ButtonMostrarMas")
-      ButtonLess!.style.display="block"
+      var ButtonMore=document.getElementById("ButtonMostrarMas")
+      ButtonMore!.style.display="block"
     }
     if(this.NumberContentCards-10==0){
       var ButtonLess=document.getElementById("ButtonMostrarMenos")
@@ -276,6 +276,11 @@ export class HomePage implements OnInit {
         this.SeeButtonMore=false
       }
     }
+    if(!(Array[Max]+1)){
+      let ButtonContentMore=document.getElementById("ButtonMostrarMas")
+      ButtonContentMore!.style.display="None"
+      this.SeeButtonMore=false
+    }
   }
   private AddMelObjectArray(Array:number[],Min:number,Max:number){
     for(let i=Min;i<Max;i++){
@@ -287,6 +292,11 @@ export class HomePage implements OnInit {
         ButtonContentMore!.style.display="None"
         this.SeeButtonMore=false
       }
+    }
+    if(!(Array[Max]+1)){
+      let ButtonContentMore=document.getElementById("ButtonMostrarMas")
+      ButtonContentMore!.style.display="None"
+      this.SeeButtonMore=false
     }
   }
   private AddBeverageObjectArray(Array:number[],Min:number,Max:number){
@@ -300,6 +310,11 @@ export class HomePage implements OnInit {
         this.SeeButtonMore=false
       }
     }
+    if(!(Array[Max]+1)){
+      let ButtonContentMore=document.getElementById("ButtonMostrarMas")
+      ButtonContentMore!.style.display="None"
+      this.SeeButtonMore=false
+    }
   }
   private AddDessertObjectArray(Array:number[],Min:number,Max:number){
     for(let i=Min;i<Max;i++){
@@ -311,6 +326,11 @@ export class HomePage implements OnInit {
         ButtonContentMore!.style.display="None"
         this.SeeButtonMore=false
       }
+    }
+    if(!(Array[Max]+1)){
+      let ButtonContentMore=document.getElementById("ButtonMostrarMas")
+      ButtonContentMore!.style.display="None"
+      this.SeeButtonMore=false
     }
   }
 
@@ -357,8 +377,8 @@ export class HomePage implements OnInit {
   private ResetButtonsNextBack(){
     var ButtonLess=document.getElementById("ButtonMostrarMenos")
       ButtonLess!.style.display="none"
-      var ButtonLess=document.getElementById("ButtonMostrarMas")
-      ButtonLess!.style.display="block"
+      var ButtonMore=document.getElementById("ButtonMostrarMas")
+      ButtonMore!.style.display="block"
       this.NumberContentCards=5
   }
 
